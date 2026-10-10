@@ -95,36 +95,6 @@ def build_home():
     <img src="assets/images/wave-white.svg" alt="" class="w-full">
   </div>
 
-  <!-- COLLAB EXCLUSIVE SECTION: NUTURA x MOTHERDAILY -->
-  <section class="py-16 lg:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-gradient-to-br from-rose-50 via-amber-50/40 to-rose-100/60 rounded-3xl p-8 sm:p-12 border border-rose-100 shadow-sm">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <span class="inline-block px-3 py-1 rounded-full bg-[#FF6F78] text-white text-xs font-bold uppercase tracking-wider">
-              Ưu Đãi Hợp Tác Độc Quyền
-            </span>
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-900">
-              Sự Hợp Tác Đầy Hứng Khởi: Nutura x MotherDaily
-            </h2>
-            <p class="text-stone-700 text-sm sm:text-base leading-relaxed">
-              Nuôi dưỡng cả bạn và thiên thần nhỏ với sự chăm sóc trọn vẹn nhất từ bộ đôi đặc quyền <strong>Nutura x MotherDaily</strong>. Trong thời gian giới hạn, sở hữu ngay cặp đôi hoàn hảo cho mẹ và bé và tận hưởng <strong>ưu đãi giảm giá sâu 40%</strong> khi mua trọn bộ cả Nutura và MotherDaily!
-            </p>
-            <div class="pt-2 flex flex-wrap gap-4 items-center">
-              <a href="product-motherdaily.html" class="btn-nutura-primary text-sm py-3 px-6 shadow-md">
-                Khám Phá Bộ Đôi Giảm 40%
-              </a>
-              <span class="text-xs text-stone-500 italic">*Áp dụng có hạn cho phụ huynh tại Việt Nam & Úc</span>
-            </div>
-          </div>
-          <div class="lg:col-span-5 text-center">
-            <img src="assets/images/motherdaily-pack.png" alt="Bộ sản phẩm Nutura x MotherDaily" class="max-h-80 mx-auto object-contain hover:scale-105 transition duration-300">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FRESH MILK DIFFERENCE SECTION -->
   <section class="py-16 lg:py-24 bg-[#FAF7F2]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -391,20 +361,6 @@ def build_home():
           </div>
         </div>
       </div>
-
-      <!-- Stage 4 Banner Link -->
-      <div class="mt-8 bg-white p-6 rounded-2xl border border-stone-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-4">
-          <img src="assets/images/stage4.jpg" alt="Nutura Stage 4" class="w-16 h-16 object-contain rounded-xl bg-stone-50">
-          <div>
-            <h4 class="font-bold text-stone-900 text-base">Bé đã trên 3 tuổi? Khám phá Nutura Stage 4 Junior Milk Drink</h4>
-            <p class="text-xs text-stone-500">Dinh dưỡng hoàn hảo cho giai đoạn mầm non và chuẩn bị bước vào tiểu học. Giá chỉ 560.000 đ ($33 AUD).</p>
-          </div>
-        </div>
-        <a href="product-stage4.html" class="btn-nutura-outline text-xs py-2.5 px-5 flex-shrink-0">
-          Xem Stage 4 &rarr;
-        </a>
-      </div>
     </div>
   </section>
 
@@ -425,137 +381,6 @@ def build_home():
           <p class="text-sm text-stone-600 leading-relaxed max-w-3xl">
             *Người chiến thắng Giải thưởng <strong>Product Review Awards 2022 & 2023</strong> tại hạng mục Sữa Dinh Dưỡng Cho Trẻ Tập Đi (Toddler Milk Drink) -  Nền tảng đánh giá sản phẩm tiêu dùng số 1 nước Úc. Hàng ngàn đánh giá 5 sao từ phụ huynh trên khắp các bang Victoria, New South Wales, Queensland...
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- THE GOOD SMOOTHIE MILK POWDER -->
-  <section class="py-16 lg:py-24 bg-gradient-to-b from-[#FAF7F2] to-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <span class="inline-block px-3.5 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-bold uppercase tracking-wider">
-          Đột Phá Mới Nhất
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">
-          Sữa Bột The Good Smoothie: Dinh Dưỡng Chuyên Sâu
-        </h2>
-        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
-          Dòng sữa bột Smoothie của Nutura được sản xuất từ 100% sữa tươi bò ăn cỏ tự nhiên của Úc, bổ sung các vi chất dinh dưỡng hướng đích đóng vai trò then chốt cho: <strong>Trí Não</strong>, <strong>Thư Giãn Giấc Ngủ</strong>, hoặc <strong>Đề Kháng Toàn Diện</strong>. Dễ dàng pha cùng nước ấm hoặc xay cùng hoa quả tươi thành ly sinh tố thơm ngon bổ dưỡng!
-        </p>
-      </div>
-
-      <!-- 3 Smoothie Products -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Cognitive -->
-        <div class="nutura-card bg-white p-6 flex flex-col text-center">
-          <span class="stage-badge stage-badge-smoothie mb-3 self-center">Phát Triển Trí Não</span>
-          <h3 class="text-2xl font-bold text-stone-900 mb-1">Cognitive</h3>
-          <p class="text-xs text-stone-500 mb-4">Tập trung, ghi nhớ và tư duy sáng tạo</p>
-          
-          <a href="product-smoothie.html" class="my-4 block group">
-            <img src="assets/images/smoothie-cognitive.png" alt="Smoothie Cognitive" class="h-60 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-
-          <div class="bg-purple-50/60 p-4 rounded-2xl text-left my-4 text-xs space-y-2">
-            <div class="font-bold text-purple-900">Thành phần vi chất vàng:</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🧠</span> Phospholipids màng tế bào thần kinh</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>⚡</span> Tyrosine kích thích phản xạ nhạy bén</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🐟</span> DHA tinh khiết cho mắt sáng thông minh</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>✨</span> Vitamin nhóm B (B1, B6, B12)</div>
-          </div>
-
-          <div class="mt-auto pt-2">
-            <div class="flex items-baseline justify-between mb-4">
-              <div>
-                <span class="text-xl font-bold text-[#FF6F78]">410.000 đ</span>
-                <span class="text-xs text-stone-400 line-through ml-1">590.000 đ</span>
-              </div>
-              <span class="text-xs text-stone-400 font-medium">$17.00 AUD</span>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <a href="product-smoothie.html" class="py-2.5 px-3 rounded-full border border-stone-300 text-stone-700 text-xs font-bold hover:bg-stone-50 text-center transition">
-                Chi Tiết
-              </a>
-              <button class="add-to-cart-btn py-2.5 px-3 rounded-full bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold transition shadow-md shadow-[#FF6F78]/20 flex items-center justify-center gap-1" data-product-id="smoothie-cognitive">
-                <span>+ Giỏ Hàng</span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Calm -->
-        <div class="nutura-card bg-white p-6 flex flex-col text-center">
-          <span class="stage-badge bg-amber-50 text-amber-700 mb-3 self-center">Thư Giãn & Giấc Ngủ</span>
-          <h3 class="text-2xl font-bold text-stone-900 mb-1">Calm</h3>
-          <p class="text-xs text-stone-500 mb-4">Vỗ về cảm xúc, ngủ sâu giấc tự nhiên</p>
-          
-          <a href="product-smoothie.html" class="my-4 block group">
-            <img src="assets/images/smoothie-calm.png" alt="Smoothie Calm" class="h-60 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-
-          <div class="bg-amber-50/60 p-4 rounded-2xl text-left my-4 text-xs space-y-2">
-            <div class="font-bold text-amber-900">Thành phần thảo mộc êm dịu:</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🌼</span> Hoa cúc La Mã (Chamomile) thư giãn</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🌾</span> Yến mạch Avena Sativa xoa dịu tinh thần</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🌙</span> Magie hữu cơ hỗ trợ giãn cơ sâu</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🍌</span> Chuối tự nhiên giàu Kali</div>
-          </div>
-
-          <div class="mt-auto pt-2">
-            <div class="flex items-baseline justify-between mb-4">
-              <div>
-                <span class="text-xl font-bold text-[#FF6F78]">410.000 đ</span>
-                <span class="text-xs text-stone-400 line-through ml-1">590.000 đ</span>
-              </div>
-              <span class="text-xs text-stone-400 font-medium">$17.00 AUD</span>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <a href="product-smoothie.html" class="py-2.5 px-3 rounded-full border border-stone-300 text-stone-700 text-xs font-bold hover:bg-stone-50 text-center transition">
-                Chi Tiết
-              </a>
-              <button class="add-to-cart-btn py-2.5 px-3 rounded-full bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold transition shadow-md shadow-[#FF6F78]/20 flex items-center justify-center gap-1" data-product-id="smoothie-calm">
-                <span>+ Giỏ Hàng</span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Immunity -->
-        <div class="nutura-card bg-white p-6 flex flex-col text-center">
-          <span class="stage-badge bg-rose-50 text-rose-700 mb-3 self-center">Tăng Cường Đề Kháng</span>
-          <h3 class="text-2xl font-bold text-stone-900 mb-1">Immunity</h3>
-          <p class="text-xs text-stone-500 mb-4">Lá chắn miễn dịch vững vàng mỗi ngày</p>
-          
-          <a href="product-smoothie.html" class="my-4 block group">
-            <img src="assets/images/smoothie-immunity.png" alt="Smoothie Immunity" class="h-60 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-
-          <div class="bg-rose-50/60 p-4 rounded-2xl text-left my-4 text-xs space-y-2">
-            <div class="font-bold text-rose-900">Kháng thể tự nhiên bảo vệ bé:</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🛡️</span> Lactoferrin hoạt tính sinh học cao</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🫐</span> Chiết xuất quả cơm cháy Elderberry</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🌿</span> Kẽm sinh học tăng miễn dịch tế bào</div>
-            <div class="flex items-center gap-2 text-stone-700"><span>🍊</span> Vitamin C tự nhiên chống oxy hóa</div>
-          </div>
-
-          <div class="mt-auto pt-2">
-            <div class="flex items-baseline justify-between mb-4">
-              <div>
-                <span class="text-xl font-bold text-[#FF6F78]">410.000 đ</span>
-                <span class="text-xs text-stone-400 line-through ml-1">590.000 đ</span>
-              </div>
-              <span class="text-xs text-stone-400 font-medium">$17.00 AUD</span>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <a href="product-smoothie.html" class="py-2.5 px-3 rounded-full border border-stone-300 text-stone-700 text-xs font-bold hover:bg-stone-50 text-center transition">
-                Chi Tiết
-              </a>
-              <button class="add-to-cart-btn py-2.5 px-3 rounded-full bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold transition shadow-md shadow-[#FF6F78]/20 flex items-center justify-center gap-1" data-product-id="smoothie-immunity">
-                <span>+ Giỏ Hàng</span>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>

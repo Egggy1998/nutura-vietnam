@@ -9,8 +9,8 @@ from build_site import render_head, render_topbar, render_navbar, render_footer
 
 def build_shop():
     content = render_head(
-        title="Cửa Hàng Sữa Hữu Cơ Nutura | Dòng Sản Phẩm Hoàn Chỉnh Cho Cả Gia Đình",
-        description="Khám phá đầy đủ dòng sữa hữu cơ Nutura Úc: Sữa công thức Stage 1, 2, 3, 4, Sữa bột chức năng The Good Smoothie, Nutura Advance và Combo ưu đãi MotherDaily.",
+        title="Cửa Hàng Sữa Hữu Cơ Nutura | Bộ 3 Giai Đoạn Stage 1, Stage 2, Stage 3",
+        description="Khám phá bộ 3 dòng sữa công thức hữu cơ Nutura Úc: Stage 1 (0 - 6 tháng), Stage 2 (6 - 12 tháng) và Stage 3 (12 - 36 tháng). 100% sữa tươi đạm A2 từ đàn bò ăn cỏ Úc.",
         canonical_url="shop.html"
     )
     content += render_topbar()
@@ -48,22 +48,16 @@ def build_shop():
         <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto">
           <span class="text-xs font-bold text-stone-400 uppercase tracking-wider mr-2">Độ Tuổi:</span>
           <button onclick="filterByAge('all')" class="filter-age-btn px-4 py-2 rounded-full text-xs font-bold bg-[#FF6F78] text-white transition" data-age="all">
-            Tất Cả
+            Tất Cả (Stage 1-3)
           </button>
           <button onclick="filterByAge('0-6m')" class="filter-age-btn px-4 py-2 rounded-full text-xs font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 transition" data-age="0-6m">
-            0 - 6 Tháng
+            Stage 1 (0 - 6 Tháng)
           </button>
           <button onclick="filterByAge('6-12m')" class="filter-age-btn px-4 py-2 rounded-full text-xs font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 transition" data-age="6-12m">
-            6 - 12 Tháng
+            Stage 2 (6 - 12 Tháng)
           </button>
           <button onclick="filterByAge('1-3y')" class="filter-age-btn px-4 py-2 rounded-full text-xs font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 transition" data-age="1-3y">
-            1 - 3 Tuổi
-          </button>
-          <button onclick="filterByAge('3y+')" class="filter-age-btn px-4 py-2 rounded-full text-xs font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 transition" data-age="3y+">
-            3+ Tuổi
-          </button>
-          <button onclick="filterByAge('adult')" class="filter-age-btn px-4 py-2 rounded-full text-xs font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 transition" data-age="adult">
-            Người Lớn
+            Stage 3 (12 - 36 Tháng)
           </button>
         </div>
 
@@ -77,277 +71,75 @@ def build_shop():
         </div>
       </div>
 
-      <!-- Category Filter Pills -->
-      <div class="flex flex-wrap gap-2 mb-8 text-xs font-semibold">
-        <button onclick="filterByCategory('all')" class="category-pill px-3 py-1.5 rounded-lg border border-stone-300 bg-stone-900 text-white" data-cat="all">Tất Cả Danh Mục</button>
-        <button onclick="filterByCategory('formula')" class="category-pill px-3 py-1.5 rounded-lg border border-stone-200 bg-white text-stone-700 hover:bg-stone-50" data-cat="formula">Sữa Công Thức Hữu Cơ</button>
-        <button onclick="filterByCategory('smoothie')" class="category-pill px-3 py-1.5 rounded-lg border border-stone-200 bg-white text-stone-700 hover:bg-stone-50" data-cat="smoothie">The Good Smoothie</button>
-        <button onclick="filterByCategory('collab')" class="category-pill px-3 py-1.5 rounded-lg border border-stone-200 bg-white text-stone-700 hover:bg-rose-50 text-rose-600" data-cat="collab">Combo Nutura x MotherDaily (-40%)</button>
-        <button onclick="filterByCategory('advance')" class="category-pill px-3 py-1.5 rounded-lg border border-stone-200 bg-white text-stone-700 hover:bg-stone-50" data-cat="advance">Dòng Nutura Advance</button>
-        <button onclick="filterByCategory('trial')" class="category-pill px-3 py-1.5 rounded-lg border border-stone-200 bg-white text-stone-700 hover:bg-stone-50" data-cat="trial">Gói Dùng Thử Sachet</button>
-      </div>
-
       <!-- PRODUCTS GRID -->
-      <div id="shopProductsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div id="shopProductsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Product 1: Stage 1 -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="0-6m" data-cat="formula" data-name="Sữa Hữu Cơ Nutura Stage 1 (0-6 tháng)">
+        <div class="product-item nutura-card flex flex-col p-6 bg-white" data-age="0-6m" data-cat="formula" data-name="Sữa Hữu Cơ Nutura Stage 1 (0-6 tháng)">
           <div class="flex items-center justify-between mb-2">
             <span class="stage-badge stage-badge-s1">0 - 6 Tháng</span>
             <span class="text-[11px] font-bold text-emerald-600">ACO Hữu Cơ</span>
           </div>
-          <a href="product-stage1.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/stage1.png" alt="Sữa Nutura Stage 1" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
+          <a href="product-stage1.html" class="my-4 block group text-center flex-1">
+            <img src="assets/images/stage1.png" alt="Sữa Nutura Stage 1" class="h-60 mx-auto object-contain group-hover:scale-105 transition duration-300">
           </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
+          <h3 class="text-lg font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
             <a href="product-stage1.html">Sữa Hữu Cơ Nutura Stage 1</a>
           </h3>
-          <p class="text-xs text-stone-500 mb-3">800g • Đạm tươi A2, Tỷ lệ đạm Whey vượt trội</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
+          <p class="text-xs text-stone-500 mb-4">800g • Đạm tươi A2, Tỷ lệ đạm Whey vượt trội (60:40)</p>
+          <div class="flex items-baseline justify-between mt-auto pt-3 border-t border-stone-100">
             <div>
-              <span class="text-lg font-bold text-[#FF6F78]">780.000 đ</span>
+              <span class="text-xl font-bold text-[#FF6F78]">780.000 đ</span>
               <span class="block text-[11px] text-stone-400">$46.00 AUD</span>
             </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="stage-1">
+            <button class="add-to-cart-btn px-4 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="stage-1">
               + Giỏ Hàng
             </button>
           </div>
         </div>
 
         <!-- Product 2: Stage 2 -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="6-12m" data-cat="formula" data-name="Sữa Hữu Cơ Nutura Stage 2 (6-12 tháng)">
+        <div class="product-item nutura-card flex flex-col p-6 bg-white" data-age="6-12m" data-cat="formula" data-name="Sữa Hữu Cơ Nutura Stage 2 (6-12 tháng)">
           <div class="flex items-center justify-between mb-2">
             <span class="stage-badge stage-badge-s2">6 - 12 Tháng</span>
             <span class="text-[11px] font-bold text-emerald-600">ACO Hữu Cơ</span>
           </div>
-          <a href="product-stage2.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/stage2.png" alt="Sữa Nutura Stage 2" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
+          <a href="product-stage2.html" class="my-4 block group text-center flex-1">
+            <img src="assets/images/stage2.png" alt="Sữa Nutura Stage 2" class="h-60 mx-auto object-contain group-hover:scale-105 transition duration-300">
           </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
+          <h3 class="text-lg font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
             <a href="product-stage2.html">Sữa Hữu Cơ Nutura Stage 2</a>
           </h3>
-          <p class="text-xs text-stone-500 mb-3">800g • Đạm Casein cân bằng, Giàu DHA & GOS</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
+          <p class="text-xs text-stone-500 mb-4">800g • Đạm Casein cân bằng, Giàu Sắt, Kẽm, DHA & GOS</p>
+          <div class="flex items-baseline justify-between mt-auto pt-3 border-t border-stone-100">
             <div>
-              <span class="text-lg font-bold text-[#FF6F78]">780.000 đ</span>
+              <span class="text-xl font-bold text-[#FF6F78]">780.000 đ</span>
               <span class="block text-[11px] text-stone-400">$46.00 AUD</span>
             </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="stage-2">
+            <button class="add-to-cart-btn px-4 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="stage-2">
               + Giỏ Hàng
             </button>
           </div>
         </div>
 
         <!-- Product 3: Stage 3 -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="1-3y" data-cat="formula" data-name="Sữa Hữu Cơ Nutura Stage 3 (12-36 tháng)">
+        <div class="product-item nutura-card flex flex-col p-6 bg-white" data-age="1-3y" data-cat="formula" data-name="Sữa Hữu Cơ Nutura Stage 3 (12-36 tháng)">
           <div class="flex items-center justify-between mb-2">
             <span class="stage-badge stage-badge-s3">1 - 3 Tuổi</span>
             <span class="text-[11px] font-bold text-amber-600">Số 1 Nước Úc</span>
           </div>
-          <a href="product-stage3.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/stage3.png" alt="Sữa Nutura Stage 3" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
+          <a href="product-stage3.html" class="my-4 block group text-center flex-1">
+            <img src="assets/images/stage3.png" alt="Sữa Nutura Stage 3" class="h-60 mx-auto object-contain group-hover:scale-105 transition duration-300">
           </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
+          <h3 class="text-lg font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
             <a href="product-stage3.html">Sữa Hữu Cơ Nutura Stage 3</a>
           </h3>
-          <p class="text-xs text-stone-500 mb-3">800g • 16 Vitamin & Khoáng chất, FOS & GOS</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
+          <p class="text-xs text-stone-500 mb-4">800g • 16 Vitamin & Khoáng chất, FOS & GOS, DHA & ARA</p>
+          <div class="flex items-baseline justify-between mt-auto pt-3 border-t border-stone-100">
             <div>
-              <span class="text-lg font-bold text-[#FF6F78]">780.000 đ</span>
+              <span class="text-xl font-bold text-[#FF6F78]">780.000 đ</span>
               <span class="block text-[11px] text-stone-400">$46.00 AUD</span>
             </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="stage-3">
-              + Giỏ Hàng
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 4: Stage 4 -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="3y+" data-cat="formula" data-name="Sữa Dinh Dưỡng Nutura Stage 4 (3 tuổi trở lên)">
-          <div class="flex items-center justify-between mb-2">
-            <span class="stage-badge bg-indigo-50 text-indigo-700">3+ Tuổi</span>
-            <span class="text-[11px] font-bold text-stone-500">Junior Milk</span>
-          </div>
-          <a href="product-stage4.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/stage4.jpg" alt="Sữa Nutura Stage 4" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
-            <a href="product-stage4.html">Sữa Dinh Dưỡng Nutura Stage 4</a>
-          </h3>
-          <p class="text-xs text-stone-500 mb-3">800g • Dinh dưỡng vàng cho trẻ mẫu giáo & tiểu học</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
-            <div>
-              <span class="text-lg font-bold text-[#FF6F78]">560.000 đ</span>
-              <span class="block text-[11px] text-stone-400">$33.00 AUD</span>
-            </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="stage-4">
-              + Giỏ Hàng
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 5: The Good Smoothie Cognitive -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="1-3y" data-cat="smoothie" data-name="The Good Smoothie Cognitive Trí Não">
-          <div class="flex items-center justify-between mb-2">
-            <span class="stage-badge stage-badge-smoothie">Trí Não</span>
-            <span class="text-[11px] font-bold text-rose-500">Giảm 30%</span>
-          </div>
-          <a href="product-smoothie.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/smoothie-cognitive.png" alt="Smoothie Cognitive" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
-            <a href="product-smoothie.html">The Good Smoothie - Cognitive</a>
-          </h3>
-          <p class="text-xs text-stone-500 mb-3">300g • Phospholipids, Tyrosine, DHA & B-Vitamins</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
-            <div>
-              <span class="text-lg font-bold text-[#FF6F78]">410.000 đ</span>
-              <span class="block text-[11px] text-stone-400 line-through">590.000 đ</span>
-            </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="smoothie-cognitive">
-              + Giỏ Hàng
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 6: The Good Smoothie Calm -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="1-3y" data-cat="smoothie" data-name="The Good Smoothie Calm Ngủ Ngon">
-          <div class="flex items-center justify-between mb-2">
-            <span class="stage-badge bg-amber-50 text-amber-700">Ngủ Ngon</span>
-            <span class="text-[11px] font-bold text-rose-500">Giảm 30%</span>
-          </div>
-          <a href="product-smoothie.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/smoothie-calm.png" alt="Smoothie Calm" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
-            <a href="product-smoothie.html">The Good Smoothie - Calm</a>
-          </h3>
-          <p class="text-xs text-stone-500 mb-3">300g • Cúc La Mã, Yến mạch, Magie & Chuối</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
-            <div>
-              <span class="text-lg font-bold text-[#FF6F78]">410.000 đ</span>
-              <span class="block text-[11px] text-stone-400 line-through">590.000 đ</span>
-            </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="smoothie-calm">
-              + Giỏ Hàng
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 7: The Good Smoothie Immunity -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="1-3y" data-cat="smoothie" data-name="The Good Smoothie Immunity Đề Kháng">
-          <div class="flex items-center justify-between mb-2">
-            <span class="stage-badge bg-rose-50 text-rose-700">Đề Kháng</span>
-            <span class="text-[11px] font-bold text-rose-500">Giảm 30%</span>
-          </div>
-          <a href="product-smoothie.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/smoothie-immunity.png" alt="Smoothie Immunity" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
-            <a href="product-smoothie.html">The Good Smoothie - Immunity</a>
-          </h3>
-          <p class="text-xs text-stone-500 mb-3">300g • Lactoferrin, Cơm cháy Elderberry, Kẽm & C</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
-            <div>
-              <span class="text-lg font-bold text-[#FF6F78]">410.000 đ</span>
-              <span class="block text-[11px] text-stone-400 line-through">590.000 đ</span>
-            </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="smoothie-immunity">
-              + Giỏ Hàng
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 8: Collab MotherDaily Stage 1 -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-rose-50/40 border-rose-200" data-age="0-6m" data-cat="collab" data-name="Combo Nutura Stage 1 x MotherDaily">
-          <div class="flex items-center justify-between mb-2">
-            <span class="stage-badge bg-rose-100 text-rose-700">Combo Mẹ & Bé</span>
-            <span class="text-[11px] font-bold text-rose-600 bg-white px-2 py-0.5 rounded-full border border-rose-200">-40% Collab</span>
-          </div>
-          <a href="product-motherdaily.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/motherdaily-pack.png" alt="Nutura x MotherDaily" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
-            <a href="product-motherdaily.html">Nutura S1 x MotherDaily</a>
-          </h3>
-          <p class="text-xs text-stone-500 mb-3">Bộ phục hồi cho mẹ sau sinh + Sữa hữu cơ Stage 1</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-rose-200/60">
-            <div>
-              <span class="text-lg font-bold text-[#FF6F78]">1.330.000 đ</span>
-              <span class="block text-[11px] text-stone-400 line-through">2.220.000 đ</span>
-            </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="collab-stage1">
-              + Giỏ Hàng
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 9: Advance Smart Grow for Kids -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="3y+" data-cat="advance" data-name="Nutura Advance Smart Grow for Kids">
-          <div class="flex items-center justify-between mb-2">
-            <span class="stage-badge bg-blue-50 text-blue-700">3+ Tuổi</span>
-            <span class="text-[11px] font-bold text-stone-500">Advance Range</span>
-          </div>
-          <a href="product-advance-kids.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/smart-grow-kids.jpg" alt="Nutura Smart Grow" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
-            <a href="product-advance-kids.html">Advance Smart Grow Kids</a>
-          </h3>
-          <p class="text-xs text-stone-500 mb-3">800g • Dinh dưỡng cao cấp bứt phá chiều cao & thể chất</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
-            <div>
-              <span class="text-lg font-bold text-[#FF6F78]">780.000 đ</span>
-              <span class="block text-[11px] text-stone-400">$46.00 AUD</span>
-            </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="smart-grow-kids">
-              + Giỏ Hàng
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 10: Advance Active Adults -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="adult" data-cat="advance" data-name="Nutura Advance Active Adults Người Lớn">
-          <div class="flex items-center justify-between mb-2">
-            <span class="stage-badge bg-stone-100 text-stone-700">Người Lớn</span>
-            <span class="text-[11px] font-bold text-stone-500">Advance Range</span>
-          </div>
-          <a href="product-advance-adults.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/active-adults.jpg" alt="Nutura Active Adults" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
-            <a href="product-advance-adults.html">Advance Active Adults</a>
-          </h3>
-          <p class="text-xs text-stone-500 mb-3">800g • Canxi sinh học & đạm tươi tái tạo năng lượng</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
-            <div>
-              <span class="text-lg font-bold text-[#FF6F78]">780.000 đ</span>
-              <span class="block text-[11px] text-stone-400">$46.00 AUD</span>
-            </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="active-adults">
-              + Giỏ Hàng
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 11: Trial Pack Stage 1 -->
-        <div class="product-item nutura-card flex flex-col p-5 bg-white" data-age="0-6m" data-cat="trial" data-name="Gói Dùng Thử Stage 1 Trial Pack">
-          <div class="flex items-center justify-between mb-2">
-            <span class="stage-badge bg-stone-100 text-stone-600">Dùng Thử</span>
-            <span class="text-[11px] font-bold text-emerald-600">2 Gói Nhỏ</span>
-          </div>
-          <a href="product-stage1.html" class="my-3 block group text-center flex-1">
-            <img src="assets/images/sachet-stage1.jpg" alt="Trial Pack Stage 1" class="h-48 mx-auto object-contain group-hover:scale-105 transition duration-300">
-          </a>
-          <h3 class="text-base font-bold text-stone-900 mb-1 hover:text-[#FF6F78] transition">
-            <a href="product-stage1.html">Gói Dùng Thử Stage 1 (Twin Pack)</a>
-          </h3>
-          <p class="text-xs text-stone-500 mb-3">2 x 20g • Tiện lợi mang đi chơi hoặc cho bé trải nghiệm</p>
-          <div class="flex items-baseline justify-between mt-auto pt-2 border-t border-stone-100">
-            <div>
-              <span class="text-lg font-bold text-[#FF6F78]">85.000 đ</span>
-              <span class="block text-[11px] text-stone-400">$4.99 AUD</span>
-            </div>
-            <button class="add-to-cart-btn px-3 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="trial-stage1">
+            <button class="add-to-cart-btn px-4 py-2 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-full transition shadow-sm" data-product-id="stage-3">
               + Giỏ Hàng
             </button>
           </div>
