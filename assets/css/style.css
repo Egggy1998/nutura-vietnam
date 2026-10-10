@@ -1,0 +1,450 @@
+/* Nutura Organic Vietnam - Custom Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Quicksand:wght@500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #FF6F78;
+  --color-primary-hover: #E65A63;
+  --color-primary-light: #FFF0F1;
+  --color-primary-soft: #FDE8EA;
+  --color-primary-dark: #602A2C;
+  --color-tertiary: #383432;
+  --color-tertiary-light: #FAF7F2;
+  --color-tertiary-soft: #EDE7E3;
+  --color-tertiary-dark: #1C120D;
+  --color-accent-green: #2F6F4E;
+  --color-accent-green-light: #E8F3ED;
+  --color-accent-gold: #C28E3A;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'Quicksand', 'Work Sans', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Accessible Focus Indicators - WCAG 2.1 AA */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced Motion - WCAG 2.1 AA */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skip link for keyboard accessibility */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 1rem;
+  background-color: var(--color-primary-dark);
+  color: #FFFFFF;
+  padding: 0.75rem 1.25rem;
+  z-index: 1000;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 0 0 12px 12px;
+  transition: top 0.2s ease;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-tertiary);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-tertiary-dark);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.font-serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF9B9E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Announcement Top Bar */
+.top-bar {
+  background-color: var(--color-primary-dark);
+  color: #FFFFFF;
+  font-size: 0.825rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Header & Navbar */
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(237, 231, 227, 0.8);
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  color: var(--color-tertiary);
+  font-weight: 600;
+  font-size: 0.935rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Wave Dividers */
+.wave-divider {
+  width: 100%;
+  display: block;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.wave-divider svg, .wave-divider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Nutura Button Styles */
+.btn-nutura-primary {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(255, 111, 120, 0.25);
+  border: 1px solid transparent;
+}
+
+.btn-nutura-primary:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 111, 120, 0.35);
+  color: #FFFFFF;
+}
+
+.btn-nutura-outline {
+  background-color: transparent;
+  color: var(--color-tertiary-dark);
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  border: 2px solid var(--color-tertiary-dark);
+  transition: all 0.25s ease;
+}
+
+.btn-nutura-outline:hover {
+  background-color: var(--color-tertiary-dark);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-nutura-white {
+  background-color: #FFFFFF;
+  color: var(--color-tertiary-dark);
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+.btn-nutura-white:hover {
+  background-color: var(--color-tertiary-light);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+/* Card Styling */
+.nutura-card {
+  background: #FFFFFF;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(237, 231, 227, 0.8);
+  box-shadow: 0 4px 20px rgba(28, 18, 13, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.nutura-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(28, 18, 13, 0.08);
+  border-color: rgba(255, 111, 120, 0.4);
+}
+
+/* Product Badge */
+.stage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.stage-badge-s1 {
+  background-color: #EBF5FF;
+  color: #1E6091;
+}
+
+.stage-badge-s2 {
+  background-color: #FFF4E5;
+  color: #B45309;
+}
+
+.stage-badge-s3 {
+  background-color: #EBF9F1;
+  color: #1E7E44;
+}
+
+.stage-badge-smoothie {
+  background-color: #F7EEFA;
+  color: #7E22CE;
+}
+
+/* Cart Drawer */
+.cart-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(28, 18, 13, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.cart-drawer-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 440px;
+  background-color: #FFFFFF;
+  z-index: 100;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-drawer.active {
+  transform: translateX(0);
+}
+
+/* Breastfeeding Disclaimer Modal */
+.disclaimer-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(28, 18, 13, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.disclaimer-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.disclaimer-modal-content {
+  background: #FFFFFF;
+  border-radius: 1.75rem;
+  max-width: 640px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.disclaimer-modal-overlay.active .disclaimer-modal-content {
+  transform: scale(1);
+}
+
+/* Table styles */
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.nutrition-table th {
+  background-color: var(--color-tertiary-light);
+  color: var(--color-tertiary-dark);
+  font-weight: 700;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--color-tertiary-soft);
+}
+
+.nutrition-table td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #F0ECE9;
+  color: var(--color-tertiary);
+}
+
+.nutrition-table tr:nth-child(even) td {
+  background-color: #FAFAFA;
+}
+
+/* Toast Notification */
+.toast-notice {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--color-tertiary-dark);
+  color: #FFFFFF;
+  padding: 1rem 1.5rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  font-size: 0.925rem;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toast-notice.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* FAQ Accordion */
+.faq-item {
+  border-bottom: 1px solid var(--color-tertiary-soft);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 1.25rem 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-tertiary-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-family: var(--font-heading);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: #55504E;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 1000px;
+  padding-bottom: 1.25rem;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+  color: var(--color-primary);
+}
+
+/* Custom Checkbox */
+.custom-checkbox {
+  accent-color: var(--color-primary);
+}

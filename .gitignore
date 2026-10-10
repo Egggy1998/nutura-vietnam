@@ -1,0 +1,13 @@
+# Environment & Secrets
+.env
+.env.local
+.wrangler/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+*.log
