@@ -9,7 +9,7 @@ from build_site import render_head, render_topbar, render_navbar, render_footer
 def build_home():
     content = render_head(
         title="Sữa Hữu Cơ Úc Chuẩn Farmgate | Nuôi Dưỡng Tự Nhiên, Đồng Hành Cùng Ngôi Làng Của Bạn",
-        description="Nutura Organic - Dòng sữa dinh dưỡng và sữa công thức hữu cơ cao cấp sản xuất 100% tại Úc từ sữa tươi nguyên liệu farmgate. Chứng nhận kép ACO & NASAA Organic.",
+        description="Nutura Organic - Dòng sữa dinh dưỡng và sữa công thức hữu cơ cao cấp sản xuất 100% tại Úc từ sữa tươi nguyên liệu farmgate. Nhãn Organic A2 Stage 1–3 thể hiện logo ACO.",
         canonical_url="index.html"
     )
     content += render_topbar()
@@ -26,7 +26,7 @@ def build_home():
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-100 text-[#FF6F78] text-xs font-bold uppercase tracking-wider">
             <span class="w-2 h-2 rounded-full bg-[#FF6F78]"></span>
-            Chứng Nhận Hữu Cơ Kép ACO & NASAA • 100% Sản Xuất Tại Úc
+            Chứng Nhận Hữu Cơ ACO Trên Nhãn • 100% Sản Xuất Tại Úc
           </div>
 
           <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-stone-900 tracking-tight leading-tight">
@@ -56,16 +56,16 @@ def build_home():
               <div class="text-[11px] text-stone-500">Đạm tươi A2 tự nhiên</div>
             </div>
             <div>
-              <div class="text-xs font-bold text-stone-900">Chuẩn Hữu Cơ Kép</div>
-              <div class="text-[11px] text-stone-500">ACO & NASAA Certified</div>
+              <div class="text-xs font-bold text-stone-900">Chứng Nhận Hữu Cơ</div>
+              <div class="text-[11px] text-stone-500">ACO trên nhãn Stage 1–3</div>
             </div>
             <div>
               <div class="text-xs font-bold text-stone-900">Không Biến Đổi Gen</div>
               <div class="text-[11px] text-stone-500">Non-GMO 100% sạch</div>
             </div>
             <div>
-              <div class="text-xs font-bold text-stone-900">Bình Chọn Số 1</div>
-              <div class="text-[11px] text-stone-500">ProductReview 2022-2023</div>
+              <div class="text-xs font-bold text-stone-900">Theo Từng Giai Đoạn</div>
+              <div class="text-[11px] text-stone-500">Stage 1–3 theo nhãn</div>
             </div>
           </div>
         </div>
@@ -80,8 +80,8 @@ def build_home():
             <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-stone-100 flex items-center gap-3">
               <img src="assets/images/icon-cert-organic.png" alt="Chứng nhận hữu cơ" class="w-12 h-12 object-contain">
               <div>
-                <div class="text-xs font-bold text-stone-900">Chứng Nhận Kép Hữu Cơ</div>
-                <div class="text-[11px] text-emerald-600 font-semibold">ACO & NASAA Australia</div>
+                <div class="text-xs font-bold text-stone-900">Chứng Nhận Hữu Cơ</div>
+                <div class="text-[11px] text-emerald-600 font-semibold">ACO trên nhãn Stage 1–3</div>
               </div>
             </div>
           </div>
@@ -149,13 +149,13 @@ def build_home():
             Thuần Khiết Từ Tự Nhiên
           </div>
           <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">
-            An Tâm Tuyệt Đối Với Chứng Nhận Hữu Cơ Kép
+            Thông Tin Chứng Nhận Trên Nhãn Sản Phẩm
           </h2>
           <h3 class="text-lg font-semibold text-[#FF6F78]">
             Phương pháp tiếp cận toàn diện cho dinh dưỡng trẻ sơ sinh & trẻ nhỏ.
           </h3>
           <p class="text-stone-700 text-sm sm:text-base leading-relaxed">
-            Các sản phẩm hữu cơ có chứng nhận của chúng tôi mang lại nguồn dưỡng chất vượt trội, toàn diện, nuôi nấng các gia đình bằng sự thanh lành của mẹ thiên nhiên. Sản phẩm Nutura tự hào đạt chứng nhận hữu cơ độc lập từ cả hai tổ chức kiểm định khắt khe nhất nước Úc: <strong>ACO (Australian Certified Organic)</strong> và <strong>NASAA Organic</strong>.
+            Trên bộ nhãn Nutura Organic A2 Stage 1–3 được cung cấp, sản phẩm thể hiện logo <strong>ACO Certified Organic</strong>. Hãy kiểm tra nhãn lô hàng thực tế để xác nhận chứng nhận của đúng sản phẩm.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <div class="flex items-start gap-3 p-3 bg-stone-50 rounded-2xl border border-stone-100">
@@ -187,7 +187,7 @@ def build_home():
           <div class="relative inline-block">
             <img src="assets/images/organic-circle.jpg" alt="Chứng nhận hữu cơ Nutura" class="rounded-full shadow-2xl w-72 sm:w-88 h-72 sm:h-88 object-cover mx-auto border-8 border-white">
             <div class="mt-6">
-              <img src="assets/images/cert-logos.png" alt="ACO & NASAA Logos" class="max-w-xs mx-auto h-auto">
+              <img src="assets/images/aco-logo.png" alt="Logo ACO trên nhãn Organic A2 Stage 1–3" class="max-w-xs mx-auto h-auto">
             </div>
           </div>
         </div>
@@ -234,7 +234,7 @@ def build_home():
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
-                Chứng nhận hữu cơ kép ACO & NASAA
+                Chứng nhận hữu cơ ACO theo nhãn
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
@@ -285,7 +285,7 @@ def build_home():
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                Chứng nhận hữu cơ kép ACO & NASAA
+                Chứng nhận hữu cơ ACO theo nhãn
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
@@ -336,7 +336,7 @@ def build_home():
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                Chứng nhận hữu cơ kép ACO & NASAA
+                Chứng nhận hữu cơ ACO theo nhãn
               </li>
               <li class="flex items-center gap-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
@@ -364,27 +364,6 @@ def build_home():
     </div>
   </section>
 
-  <!-- AWARD WINNING BANNER -->
-  <section class="py-12 bg-white border-t border-b border-stone-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
-        <div class="flex-shrink-0 mx-auto md:mx-0">
-          <img src="assets/images/product-review.png" alt="Product Review Award Winner 2022 & 2023" class="h-28 sm:h-32 w-auto">
-        </div>
-        <div class="space-y-2 flex-1">
-          <div class="inline-block px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider">
-            Giải Thưởng Danh Giá Nhất Nước Úc
-          </div>
-          <h2 class="text-2xl sm:text-3xl font-bold text-stone-900">
-            Được Các Bậc Cha Mẹ Úc Bình Chọn Số 1
-          </h2>
-          <p class="text-sm text-stone-600 leading-relaxed max-w-3xl">
-            *Người chiến thắng Giải thưởng <strong>Product Review Awards 2022 & 2023</strong> tại hạng mục Sữa Dinh Dưỡng Cho Trẻ Tập Đi (Toddler Milk Drink) -  Nền tảng đánh giá sản phẩm tiêu dùng số 1 nước Úc. Hàng ngàn đánh giá 5 sao từ phụ huynh trên khắp các bang Victoria, New South Wales, Queensland...
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- MISSION & THE NUTURA VILLAGE -->
   <section class="py-16 lg:py-24 bg-white">
@@ -666,8 +645,8 @@ def build_home():
         </div>
         <div class="flex flex-col items-center">
           <img src="assets/images/icon-cert-organic.png" alt="Certified Organic" class="h-16 w-auto mb-2 object-contain">
-          <h4 class="text-xs font-bold text-stone-900">Chứng Nhận Hữu Cơ Kép</h4>
-          <p class="text-[11px] text-stone-500">ACO & NASAA Standards</p>
+          <h4 class="text-xs font-bold text-stone-900">Chứng Nhận Hữu Cơ</h4>
+          <p class="text-[11px] text-stone-500">ACO trên nhãn Stage 1–3</p>
         </div>
         <div class="flex flex-col items-center">
           <img src="assets/images/icon-no-artificial-flav.png" alt="No Artificial Flavours" class="h-16 w-auto mb-2 object-contain">

@@ -6,7 +6,7 @@ const NUTURA_PRODUCTS = {
   'stage-1': {
     id: 'stage-1',
     name: 'Sữa Hữu Cơ Nutura Stage 1 (0 - 6 tháng)',
-    subtitle: 'Đạm tươi A2, Tỷ lệ Whey vượt trội, Chuẩn ACO & NASAA',
+    subtitle: 'Sữa hữu cơ đạm A2, Whey : Casein 60 : 40, logo ACO trên nhãn',
     price: 780000,
     priceAud: 46.00,
     weight: '800g',
@@ -19,7 +19,7 @@ const NUTURA_PRODUCTS = {
   'stage-2': {
     id: 'stage-2',
     name: 'Sữa Hữu Cơ Nutura Stage 2 (6 - 12 tháng)',
-    subtitle: 'Đạm Casein cân bằng, Giàu dưỡng chất ăn dặm, DHA & GOS',
+    subtitle: 'Whey : Casein 40 : 60, DHA, GOS và FOS theo nhãn',
     price: 780000,
     priceAud: 46.00,
     weight: '800g',
@@ -32,7 +32,7 @@ const NUTURA_PRODUCTS = {
   'stage-3': {
     id: 'stage-3',
     name: 'Sữa Hữu Cơ Nutura Stage 3 (12 - 36 tháng)',
-    subtitle: '16 Vitamin & Khoáng chất, Tăng chiều cao và đề kháng',
+    subtitle: 'Sữa dinh dưỡng cho trẻ 1–3 tuổi, GOS/FOS và DHA',
     price: 780000,
     priceAud: 46.00,
     weight: '800g',

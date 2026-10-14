@@ -166,8 +166,8 @@ def build_fresh_milk_difference():
 
 def build_certified_organic():
     content = render_head(
-        title="Chứng Nhận Hữu Cơ Kép ACO & NASAA | Chuẩn Mực Tinh Khiết Của Nutura Organic",
-        description="Tìm hiểu tiêu chuẩn chứng nhận hữu cơ kép độc lập từ ACO và NASAA của Nutura Organic. 100% không hóa chất, không biến đổi gen, đàn bò ăn cỏ tự nhiên, trung hòa carbon đầu tiên tại Úc.",
+        title="Chứng Nhận Hữu Cơ ACO Trên Nhãn Nutura Organic A2",
+        description="Tìm hiểu logo chứng nhận hữu cơ ACO thể hiện trên bộ nhãn Nutura Organic A2 Stage 1–3; kiểm tra nhãn thực tế để xác nhận sản phẩm.",
         canonical_url="certified-organic.html"
     )
     content += render_topbar()
@@ -183,14 +183,13 @@ def build_certified_organic():
             Tiêu Chuẩn Khắt Khe Hàng Đầu Thế Giới
           </div>
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
-            Chứng Nhận Hữu Cơ Kép: Sự An Tâm Tuyệt Đối Cho Cha Mẹ
+            Chứng Nhận Hữu Cơ Trên Nhãn Sản Phẩm
           </h1>
           <p class="text-base sm:text-lg text-stone-700 leading-relaxed">
-            Dòng sản phẩm hữu cơ của chúng tôi tự hào mang <strong>chứng nhận kép độc lập từ ACO và NASAA</strong> -  Đảm bảo mọi thành phần đưa vào công thức đều nằm trong nhóm được kiểm định và giám sát gắt gao bậc nhất trên hành tinh.
+            Bộ nhãn Nutura Organic A2 Stage 1–3 trong tài liệu sản phẩm hiển thị logo <strong>ACO Certified Organic</strong>. Đối chiếu nhãn trên lon bạn mua để xác nhận chứng nhận và thông tin thành phần của đúng sản phẩm.
           </p>
           <div class="flex items-center gap-4 pt-2">
             <img src="assets/images/aco-logo.png" alt="ACO" class="h-14 w-auto bg-white p-2 rounded-xl border border-stone-200 shadow-sm">
-            <img src="assets/images/nasaa-logo.png" alt="NASAA" class="h-14 w-auto bg-white p-2 rounded-xl border border-stone-200 shadow-sm">
           </div>
         </div>
         <div class="lg:col-span-5 text-center">
@@ -207,49 +206,20 @@ def build_certified_organic():
       <div class="bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-100 p-8 sm:p-12 rounded-3xl border border-emerald-200 mb-16">
         <div class="max-w-3xl space-y-4">
           <span class="inline-block px-3 py-1 rounded-full bg-emerald-700 text-white text-xs font-bold uppercase">
-            Tiên Phong Bảo Vệ Hành Tinh Xanh
+            Thông Tin Trên Nhãn
           </span>
           <h2 class="text-2xl sm:text-3xl font-bold text-emerald-950">
-            Thương Hiệu Sữa Trẻ Em Trung Hòa Carbon (Carbon Neutral) Đầu Tiên Của Úc
+            Kiểm Tra Thông Tin Trên Nhãn Sản Phẩm
           </h2>
           <p class="text-stone-700 text-sm sm:text-base leading-relaxed">
-            Bằng cách giảm thiểu và bù đắp lượng khí thải carbon trên toàn bộ quy trình vận hành và đóng gói, Nutura không chỉ nuôi dưỡng con bạn ngày hôm nay, mà còn cam kết bảo vệ môi trường trong lành cho tương lai của thế hệ mai sau.
+            Nhãn các sản phẩm Stage 1–3 thể hiện logo ACO và thông tin thành phần, dinh dưỡng, cách pha, bảo quản. Hãy đọc nhãn của đúng sản phẩm trước khi sử dụng.
           </p>
         </div>
       </div>
 
-      <!-- 5 Zero Promises -->
       <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
-        <h2 class="text-3xl font-bold text-stone-900">Cam Kết "Nói Không Với Hóa Chất Độc Hại"</h2>
-        <p class="text-stone-600 text-sm leading-relaxed">
-          Trao cho con mọi dưỡng chất con cần, và tuyệt đối không đưa vào cơ thể non nớt của con những chất có hại:
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 space-y-3">
-          <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">1</div>
-          <h3 class="font-bold text-stone-900 text-base">Không Biến Đổi Gen (Non-GMO)</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">Kiểm định nghiêm ngặt từ nguồn thức ăn cỏ cho đàn bò đến từng thành phần vi chất.</p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 space-y-3">
-          <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">2</div>
-          <h3 class="font-bold text-stone-900 text-base">Không Thuốc Trừ Sâu Tổng Hợp</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">Đất và đồng cỏ hoàn toàn sạch, không phân bón hóa học trong suốt nhiều thập kỷ.</p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 space-y-3">
-          <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">3</div>
-          <h3 class="font-bold text-stone-900 text-base">Không Kháng Sinh & Hormone</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">Đàn bò được chăn thả tự nhiên, không tiêm hormone kích thích tăng trưởng hay sữa.</p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 space-y-3">
-          <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">4</div>
-          <h3 class="font-bold text-stone-900 text-base">Không Hương Vị / Chất Tạo Ngọt</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">Vị ngọt thanh dịu 100% từ đường sữa lactose tự nhiên, không gây nghiện ngọt hay béo phì.</p>
-        </div>
+        <h2 class="text-3xl font-bold text-stone-900">Đọc Thành Phần Trên Nhãn Sản Phẩm</h2>
+        <p class="text-stone-600 text-sm leading-relaxed">Kiểm tra thành phần, chất gây dị ứng và hướng dẫn pha trên nhãn của đúng sản phẩm trước khi sử dụng. Tham khảo chuyên gia y tế khi cần tư vấn cho trẻ.</p>
       </div>
     </div>
   </section>

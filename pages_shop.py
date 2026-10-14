@@ -125,7 +125,7 @@ def build_shop():
         <div class="product-item nutura-card flex flex-col p-6 bg-white" data-age="1-3y" data-cat="formula" data-name="Sữa Hữu Cơ Nutura Stage 3 (12-36 tháng)">
           <div class="flex items-center justify-between mb-2">
             <span class="stage-badge stage-badge-s3">1 - 3 Tuổi</span>
-            <span class="text-[11px] font-bold text-amber-600">Số 1 Nước Úc</span>
+            <span class="text-[11px] font-bold text-amber-600">Từ 12 tháng tuổi</span>
           </div>
           <a href="product-stage3.html" class="my-4 block group text-center flex-1">
             <img src="assets/images/stage3.png" alt="Sữa Nutura Stage 3" class="h-60 mx-auto object-contain group-hover:scale-105 transition duration-300">

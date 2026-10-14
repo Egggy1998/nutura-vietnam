@@ -60,7 +60,7 @@ def build_about_us():
           Lịch Sử & Cam Kết Tiên Phong Đổi Mới
         </h2>
         <p class="text-stone-700 text-sm sm:text-base leading-relaxed">
-          Được thành lập tại tiểu bang Victoria, miền Nam nước Úc -  Vựa sữa hữu cơ trứ danh thế giới, Nutura nhanh chóng xác lập vị thế tiên phong trong đổi mới công nghệ sản xuất sữa tươi 1 lần sấy (Wet Blending). Chúng tôi tự hào vượt qua các quy chuẩn khắt khe nhất để đạt <strong>chứng nhận kép hữu cơ ACO và NASAA</strong>, đồng thời trở thành <strong>thương hiệu dinh dưỡng trẻ em trung hòa carbon (Carbon Neutral) đầu tiên của Úc</strong>.
+          Nutura là thương hiệu sữa từ Úc. Bộ nhãn Organic A2 Stage 1–3 trong tài liệu sản phẩm thể hiện chứng nhận hữu cơ <strong>ACO</strong> và biểu tượng Made in Australia. Thông tin công thức, hướng dẫn sử dụng và chứng nhận áp dụng cần được đối chiếu theo nhãn từng sản phẩm.
         </p>
       </div>
 
@@ -352,7 +352,7 @@ def build_subscriptions():
         <div class="p-8 bg-[#FAF7F2] rounded-3xl border border-stone-200/80 space-y-3">
           <div class="w-14 h-14 bg-[#FF6F78] text-white rounded-2xl flex items-center justify-center font-bold text-xl mx-auto shadow-md">1</div>
           <h3 class="font-bold text-stone-900 text-lg">Chọn Giai Đoạn Sữa Của Bé</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">Chọn Stage 1, Stage 2, Stage 3 hoặc Stage 4 phù hợp với độ tuổi hiện tại của bé yêu.</p>
+          <p class="text-xs text-stone-600 leading-relaxed">Chọn Stage 1, Stage 2 hoặc Stage 3 phù hợp với độ tuổi ghi trên nhãn lon.</p>
         </div>
 
         <div class="p-8 bg-[#FAF7F2] rounded-3xl border border-stone-200/80 space-y-3">
@@ -375,8 +375,8 @@ def build_subscriptions():
 
 def build_faqs():
     content = render_head(
-        title="Câu Hỏi Thường Gặp (FAQs) | Hướng Dẫn & Bảng Chuyển Đổi Sữa 7 Ngày",
-        description="Giải đáp chi tiết mọi thắc mắc về sữa hữu cơ Nutura: Chuẩn chứng nhận ACO/NASAA, nguồn sữa tươi farmgate, hướng dẫn pha, bảng chuyển đổi sữa 7 ngày và chính sách giao hàng.",
+        title="Câu Hỏi Thường Gặp (FAQs) | Hướng Dẫn Pha Sữa Theo Nhãn",
+        description="Giải đáp chi tiết mọi thắc mắc về sữa hữu cơ Nutura: Chứng nhận ACO trên nhãn, nguồn sữa tươi, hướng dẫn pha theo từng nhãn sản phẩm và thông tin giao hàng.",
         canonical_url="faqs.html"
     )
     content += render_topbar()
@@ -395,7 +395,7 @@ def build_faqs():
             Câu Hỏi Thường Gặp (FAQs)
           </h1>
           <p class="text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl">
-            Tìm câu trả lời cho những thắc mắc phổ biến nhất về sản phẩm, cách pha chế, chuyển đổi sữa khoa học và chính sách giao hàng của Nutura Organic.
+            Tìm câu trả lời cho những thắc mắc phổ biến nhất về sản phẩm, cách pha theo nhãn từng sản phẩm và thông tin giao hàng của Nutura Organic.
           </p>
         </div>
         <div class="md:col-span-4 text-center">
@@ -421,7 +421,7 @@ def build_faqs():
             <span class="faq-icon">▼</span>
           </button>
           <div class="faq-answer text-sm space-y-2">
-            <p><strong>Có.</strong> Sản phẩm Nutura Organic tự hào mang chứng nhận hữu cơ độc lập từ cả hai cơ quan hàng đầu của Úc: <strong>ACO (Australian Certified Organic)</strong> và <strong>NASAA Organic</strong>. Logo của hai tổ chức này được in rõ ràng trên tất cả lon sản phẩm của chúng tôi. Chúng tôi tuân thủ các tiêu chuẩn hữu cơ nghiêm ngặt nhất thế giới: Không thuốc trừ sâu tổng hợp, không phân bón hóa học, đàn bò không tiêm kháng sinh hay hormone tăng trưởng.</p>
+            <p>Trên nhãn Organic A2 Stage 1–3 hiện có trong thư mục tài liệu, sản phẩm thể hiện logo <strong>ACO Certified Organic</strong>. Hãy kiểm tra nhãn lô hàng thực tế để xác nhận chứng nhận áp dụng; không mặc định mọi lon đều in logo NASAA.</p>
           </div>
         </div>
 
@@ -451,52 +451,33 @@ def build_faqs():
             <span class="faq-icon">▼</span>
           </button>
           <div class="faq-answer text-sm space-y-2">
-            <p><strong>Không.</strong> Toàn bộ nguyên liệu và chuỗi cung ứng được kiểm soát nghiêm ngặt 100% Non-GMO, đáp ứng yêu cầu bắt buộc của chứng nhận hữu cơ quốc tế.</p>
+            <p>Hãy xem danh sách thành phần và chứng nhận trên nhãn của đúng sản phẩm, đúng lô hàng. Tài liệu nhãn đã đối chiếu không đủ để xác nhận tuyên bố 100% Non-GMO cho toàn bộ chuỗi cung ứng.</p>
           </div>
         </div>
       </div>
 
-      <!-- Group 2: Hướng dẫn pha & Bảng chuyển đổi sữa 7 ngày -->
+      <!-- Group 2: Hướng dẫn pha và bảo quản -->
       <div class="space-y-4">
         <h2 class="text-2xl font-bold text-stone-900 border-b border-stone-200 pb-3 flex items-center gap-2">
-          <span>🍼</span> 2. Pha Chế, Bảo Quản & Bảng Chuyển Đổi Sữa 7 Ngày
+          <span>🍼</span> 2. Pha Chế & Bảo Quản
         </h2>
 
         <div class="faq-item open">
           <button class="faq-question">
-            <span>Cách chuyển đổi từ sữa cũ sang sữa Nutura cho bé như thế nào?</span>
+            <span>Chuyển sang sữa Nutura cho bé như thế nào?</span>
             <span class="faq-icon">▼</span>
           </button>
           <div class="faq-answer text-sm space-y-3">
-            <p>Để hệ tiêu hóa non nớt của bé thích nghi êm dịu, mẹ nên thực hiện chuyển đổi dần dần trong 7 ngày theo bảng khuyến nghị sau:</p>
-            <div class="overflow-x-auto rounded-xl border border-stone-200">
-              <table class="nutrition-table text-xs">
-                <thead>
-                  <tr>
-                    <th scope="col">Giai Đoạn</th>
-                    <th scope="col">Tỷ Lệ Sữa Cũ Đang Dùng</th>
-                    <th scope="col">Tỷ Lệ Sữa Nutura Mới</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Ngày 1 & Ngày 2</td><td><strong>75%</strong></td><td><strong>25%</strong></td></tr>
-                  <tr><td>Ngày 3 & Ngày 4</td><td><strong>50%</strong></td><td><strong>50%</strong></td></tr>
-                  <tr><td>Ngày 5 & Ngày 6</td><td><strong>25%</strong></td><td><strong>75%</strong></td></tr>
-                  <tr><td>Từ Ngày 7 trở đi</td><td><strong>0%</strong></td><td><strong>100% Nutura</strong></td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="text-xs text-stone-500 italic">*Trong quá trình chuyển đổi, bé có thể có chút thay đổi về phân do hệ vi sinh đang thích nghi, điều này hoàn toàn bình thường.</p>
+            <p>Hỏi ý kiến chuyên gia y tế trước khi đổi sữa cho trẻ, đặc biệt khi trẻ có tiền sử dị ứng hoặc vấn đề tiêu hóa. Chọn đúng Stage theo độ tuổi; pha mỗi sản phẩm riêng theo hướng dẫn trên lon. Không trộn bột của hai sản phẩm hoặc tự thay đổi tỷ lệ nước và bột.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question">
             <span>Một muỗng gạt ngang bột sữa tương đương bao nhiêu gram?</span>
             <span class="faq-icon">▼</span>
           </button>
           <div class="faq-answer text-sm space-y-2">
-            <p>Một muỗng gạt ngang đi kèm trong lon sữa Nutura tương đương <strong>4.6g bột sữa</strong>. Tỷ lệ pha chuẩn là <strong>1 muỗng gạt với 60ml nước ấm</strong> (nước đun sôi để nguội khoảng 40 - 50°C).</p>
+            <p>Nhãn Stage 1 và Stage 2: <strong>1 muỗng gạt ngang (4,6 g) cho 30 ml nước đun sôi để nguội</strong>. Nhãn Stage 3: <strong>6 muỗng gạt ngang (6 g/muỗng) cho 200 ml nước sạch</strong>. Chỉ dùng muỗng đi kèm lon; làm theo nhãn đúng sản phẩm và không tự thay đổi tỷ lệ trừ khi có chỉ định y tế.</p>
           </div>
         </div>
 
@@ -506,7 +487,7 @@ def build_faqs():
             <span class="faq-icon">▼</span>
           </button>
           <div class="faq-answer text-sm space-y-2">
-            <p>Lon sữa nên được dùng hết trong vòng <strong>4 tuần</strong> kể từ khi mở màng nhôm niêm phong. Bảo quản lon nơi khô ráo, thoáng mát (dưới 25°C). <strong>TUYỆT ĐỐI KHÔNG để lon sữa bột vào tủ lạnh</strong> vì hơi ẩm sẽ làm bột bị vón cục và giảm chất lượng vi chất.</p>
+            <p>Đậy kín lon sau khi lấy bột. Xem điều kiện bảo quản và thời hạn sử dụng sau mở nắp trên nhãn của đúng lon đang dùng; không sử dụng quá hạn. Với sữa đã pha, làm theo hướng dẫn riêng trên nhãn từng Stage.</p>
           </div>
         </div>
       </div>
@@ -710,6 +691,7 @@ def build_cart():
         <div class="lg:col-span-5 bg-[#FAF7F2] p-6 sm:p-8 rounded-3xl border border-stone-200/80 space-y-6">
           <h3 class="text-lg font-bold text-stone-900">Tóm Tắt Đơn Hàng</h3>
 
+          <!-- ponytail: chỉ xem giỏ hàng; bật thanh toán khi có backend nhận đơn và bảng giá đã xác minh. -->
           <!-- Discount Voucher Box -->
           <div class="flex gap-2">
             <input type="text" id="voucherCodeInput" placeholder="Mã giảm giá (ví dụ: NUTURA40)" class="flex-1 px-3 py-2 text-xs bg-white border border-stone-300 rounded-xl focus:outline-none focus:border-[#FF6F78] uppercase font-bold">
@@ -773,8 +755,9 @@ def build_cart():
             </label>
           </div>
 
-          <button onclick="submitOrder()" class="w-full py-3.5 bg-[#FF6F78] hover:bg-[#E65A63] text-white font-bold rounded-full transition text-sm shadow-lg shadow-[#FF6F78]/30">
-            Xác Nhận Đặt Hàng Ngay
+          <p role="status" class="text-sm font-semibold text-amber-900">Trang demo: chưa có máy chủ nhận đơn. Không nhập thông tin cá nhân hoặc chuyển tiền; giá và ưu đãi chưa được xác minh.</p>
+           <button type="button" disabled title="Chưa có máy chủ nhận đơn" class="w-full py-3.5 bg-stone-300 text-stone-700 font-bold rounded-full text-sm cursor-not-allowed">
+            Chưa thể đặt hàng
           </button>
         </div>
       </div>

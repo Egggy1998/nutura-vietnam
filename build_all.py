@@ -12,7 +12,7 @@ from pages_products_stage2_3_4 import build_product_stage2, build_product_stage3
 from pages_science import build_fresh_milk_difference, build_certified_organic, build_breast_is_best
 from pages_village import build_about_us, build_village, build_subscriptions, build_faqs, build_contact, build_cart
 
-OUTPUT_DIR = "C:/Users/sanon/projects/nutura-vietnam"
+OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 PAGES = {
     "index.html": build_home,

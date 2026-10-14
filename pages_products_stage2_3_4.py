@@ -8,7 +8,7 @@ from build_site import render_head, render_topbar, render_navbar, render_footer
 def build_product_stage2():
     content = render_head(
         title="Sữa Hữu Cơ Nutura Stage 2 (6 - 12 tháng) 800g | Giàu DHA, Sắt & Kẽm Ăn Dặm",
-        description="Sữa công thức hữu cơ Nutura Stage 2 dành cho bé từ 6 đến 12 tháng tuổi. Đạm Casein cân bằng, tăng cường Sắt, Kẽm, DHA và hệ chất xơ GOS/FOS hỗ trợ hệ tiêu hóa giai đoạn ăn dặm.",
+        description="Sữa công thức hữu cơ Nutura Stage 2 dành cho bé từ 6 đến 12 tháng tuổi. Tỷ lệ Whey : Casein 40 : 60, có DHA và chất xơ GOS/FOS theo nhãn sản phẩm.",
         canonical_url="product-stage2.html"
     )
     content += render_topbar()
@@ -38,8 +38,7 @@ def build_product_stage2():
         <div class="lg:col-span-6 space-y-6">
           <div class="space-y-2">
             <div class="flex items-center gap-2">
-              <div class="flex text-amber-400 text-sm">★★★★★</div>
-              <span class="text-xs text-stone-500 font-semibold">(112 đánh giá)</span>
+              <span class="text-xs text-stone-500 font-semibold">Thông tin sản phẩm theo nhãn Stage 2</span>
             </div>
             <h1 class="text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">
               Sữa Công Thức Hữu Cơ Nutura Stage 2
@@ -48,7 +47,7 @@ def build_product_stage2():
           </div>
 
           <p class="text-stone-600 text-sm leading-relaxed">
-            Từ 6 tháng tuổi, khi bé bắt đầu hành trình ăn dặm, nhu cầu về <strong>Sắt, Canxi và Kẽm</strong> tăng cao rõ rệt. Nutura Stage 2 được điều chỉnh tỷ lệ <strong>Casein cân bằng (50:50)</strong> giúp bé no lâu, ngủ sâu giấc hơn vào ban đêm, kết hợp cùng hệ chất xơ GOS & FOS giúp hệ tiêu hóa luôn êm mượt, không táo bón.
+            Nutura Stage 2 là sữa công thức tiếp nối dành cho trẻ từ 6 đến 12 tháng tuổi. Nhãn sản phẩm ghi tỷ lệ <strong>Whey : Casein 40 : 60</strong>, có DHA, GOS và FOS. Sản phẩm không thay thế chế độ ăn dặm đa dạng.
           </p>
 
           <div class="p-5 bg-[#FAF7F2] rounded-2xl border border-stone-200/80 space-y-4">
@@ -74,9 +73,14 @@ def build_product_stage2():
             <div class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Đạm A2 từ bò ăn cỏ Úc</div>
             <div class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Tăng cường Sắt & Kẽm ăn dặm</div>
             <div class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Prebiotics kép GOS + FOS</div>
-            <div class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Chuẩn hữu cơ kép ACO & NASAA</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-500 font-bold">✓</span> Chứng nhận hữu cơ ACO theo nhãn</div>
           </div>
         </div>
+      </div>
+      <div class="mt-10 rounded-2xl border border-amber-200 bg-amber-50 p-6 text-sm text-stone-800 space-y-2">
+        <h2 class="font-bold text-base">Pha sữa theo nhãn Stage 2</h2>
+        <p>Chỉ dùng cho trẻ từ 6 tháng tuổi. Dùng muỗng trong lon: 1 muỗng gạt ngang (4,6 g) cho 30 ml nước đun sôi để nguội. Trẻ 6–9 tháng: 180 ml nước + 6 muỗng, khoảng 4 cữ/ngày; trẻ 9–12 tháng: 240 ml nước + 8 muỗng, khoảng 3 cữ/ngày. Không tự thay đổi tỷ lệ trừ khi có chỉ định y tế.</p>
+        <p>Sữa mẹ là thức ăn tốt nhất cho trẻ sơ sinh và trẻ nhỏ. Hỏi ý kiến chuyên gia y tế trước khi dùng sữa công thức; trẻ từ 6 tháng cần ăn dặm phù hợp.</p>
       </div>
     </div>
   </section>
@@ -86,8 +90,8 @@ def build_product_stage2():
 
 def build_product_stage3():
     content = render_head(
-        title="Sữa Hữu Cơ Nutura Stage 3 (12 - 36 tháng) 800g | Giải Thưởng Số 1 Nước Úc",
-        description="Sữa dinh dưỡng hữu cơ Nutura Stage 3 cho trẻ từ 1 đến 3 tuổi. Đạt giải thưởng Product Review Awards Số 1 nước Úc. 16 vitamin & khoáng chất, FOS/GOS, DHA giúp phát triển chiều cao và trí tuệ vượt trội.",
+        title="Sữa Hữu Cơ Nutura Stage 3 (12 - 36 tháng) 800g | Thông Tin Theo Nhãn Sản Phẩm",
+        description="Sữa dinh dưỡng hữu cơ Nutura Stage 3 cho trẻ từ 1 đến 3 tuổi; mỗi khẩu phần 230 ml cung cấp 216 mg canxi, 2,5 µg vitamin D và 33 mg DHA theo nhãn sản phẩm.",
         canonical_url="product-stage3.html"
     )
     content += render_topbar()
@@ -109,7 +113,7 @@ def build_product_stage3():
         <div class="lg:col-span-6 space-y-4">
           <div class="bg-[#FAF7F2] rounded-3xl p-8 border border-stone-200/80 text-center relative overflow-hidden">
             <span class="absolute top-4 left-4 stage-badge stage-badge-s3">12 - 36 Tháng</span>
-            <span class="absolute top-4 right-4 bg-amber-100 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">Số 1 Nước Úc</span>
+            <span class="absolute top-4 right-4 bg-amber-100 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">Từ 12 tháng tuổi</span>
             <img src="assets/images/stage3.png" alt="Sữa Nutura Stage 3" class="h-96 mx-auto object-contain hover:scale-105 transition duration-300">
           </div>
         </div>
@@ -117,8 +121,7 @@ def build_product_stage3():
         <div class="lg:col-span-6 space-y-6">
           <div class="space-y-2">
             <div class="flex items-center gap-2">
-              <div class="flex text-amber-400 text-sm">★★★★★</div>
-              <span class="text-xs text-stone-500 font-semibold">(204 đánh giá - ProductReview No.1)</span>
+              <span class="text-xs text-stone-500 font-semibold">Thông tin sản phẩm theo nhãn Stage 3</span>
             </div>
             <h1 class="text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">
               Sữa Dinh Dưỡng Hữu Cơ Nutura Stage 3
@@ -127,7 +130,7 @@ def build_product_stage3():
           </div>
 
           <p class="text-stone-600 text-sm leading-relaxed">
-            Sản phẩm đạt giải thưởng danh giá <strong>Product Review Awards 2022 & 2023</strong> tại Úc. Cung cấp đến <strong>50% nhu cầu khuyến nghị hàng ngày (RDI)</strong> của 16 loại vitamin và khoáng chất quan trọng chỉ với 1-2 khẩu phần mỗi ngày. Bổ sung Canxi, Vitamin D3 tăng trưởng chiều cao, DHA và ARA cho trí não nhạy bén.
+            Nutura Stage 3 dành cho trẻ từ 1 đến 3 tuổi. Theo nhãn, mỗi khẩu phần 230 ml cung cấp <strong>216 mg canxi</strong>, <strong>2,5 µg vitamin D</strong> và <strong>33 mg DHA</strong>; tỷ lệ đáp ứng nhu cầu khuyến nghị khác nhau tùy dưỡng chất.
           </p>
 
           <div class="p-5 bg-[#FAF7F2] rounded-2xl border border-stone-200/80 space-y-4">
@@ -149,6 +152,11 @@ def build_product_stage3():
             </div>
           </div>
         </div>
+      </div>
+      <div class="mt-10 rounded-2xl border border-amber-200 bg-amber-50 p-6 text-sm text-stone-800 space-y-2">
+        <h2 class="font-bold text-base">Pha sữa theo nhãn Stage 3</h2>
+        <p>Chỉ dùng cho trẻ từ 12 tháng tuổi. Dùng muỗng trong lon: 6 muỗng gạt ngang (6 g/muỗng) pha với 200 ml nước sạch; cho trẻ uống ngay sau khi pha, không bảo quản và bỏ phần còn thừa. Hướng dẫn trên nhãn: 1–2 cữ/ngày.</p>
+        <p>Thức uống này bổ sung cho chế độ ăn đa dạng, không dùng cho trẻ dưới 12 tháng. Hãy hỏi ý kiến chuyên gia y tế trước khi sử dụng.</p>
       </div>
     </div>
   </section>
