@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ngôi Làng Nutura & Góc Cha Mẹ | Cẩm Nang Nuôi Con Toàn Diện | Nutura Organic Việt Nam</title>
-  <meta name="description" content="Tuyển tập bài viết chia sẻ từ các chuyên gia y tế, dinh dưỡng và tâm lý học trẻ em hàng đầu của Nutura Village. Kiến thức nuôi dạy con chuẩn khoa học.">
+  <title>Góc cha mẹ | Cẩm nang nuôi dạy con chuẩn khoa học | Nutura Organic Việt Nam</title>
+  <meta name="description" content="Tuyển tập bài viết chia sẻ về tâm lý trẻ nhỏ, cẩm nang nuôi con và dinh dưỡng từ các tác giả uy tín tại Góc cha mẹ Nutura Việt Nam.">
   <link rel="canonical" href="village.html">
-  <link rel="shortcut icon" href="https://www.nutura.com.au/favicon.ico">
+  <link rel="shortcut icon" href="assets/images/nutura-logo-coral.svg">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -45,108 +45,89 @@
 <body class="bg-white text-stone-800 flex flex-col min-h-screen">
   <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-bar py-2 px-4 text-center">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
-      <div class="flex items-center gap-2 mx-auto sm:mx-0">
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span>🌿 <strong>Nutura Organic:</strong> Sữa Hữu Cơ Đạm A2 Từ Úc | Logo ACO Trên Nhãn Stage 1–3</span>
-      </div>
-      <div class="flex items-center gap-4 text-xs">
-        <span class="hidden md:inline">🚚 Miễn phí vận chuyển đơn từ 1.000.000 đ</span>
-        <a href="tel:1800827957" class="hover:text-rose-200 transition font-semibold">📞 Hotline: 1800 827 957</a>
-        <a href="subscriptions.html" class="bg-rose-500 hover:bg-rose-600 px-2.5 py-0.5 rounded-full text-white font-bold transition">Tiết kiệm 15%</a>
-      </div>
+  <!-- Mandatory Breast Milk Statement (NĐ100/2014/NĐ-CP & WHO) -->
+  <aside aria-label="Thông điệp y tế bắt buộc" class="bg-amber-50 border-b border-amber-200 text-stone-800 py-3 px-4 text-center text-sm font-semibold">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <svg class="w-4 h-4 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+      </svg>
+      <span>Sữa mẹ là thức ăn tốt nhất cho sức khoẻ và sự phát triển toàn diện của trẻ nhỏ.</span>
     </div>
-  </div>
+  </aside>
 
-  <!-- Main Header & Navigation -->
-  <header class="navbar-sticky">
+  <!-- Main Header & Navigation (5 mục menu chính) -->
+  <header class="navbar-sticky bg-white/95 backdrop-blur border-b border-stone-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
-          <img src="assets/images/nutura-logo-coral.svg" alt="Nutura Organic Vietnam" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105">
+          <img src="assets/images/nutura-logo-coral.svg" alt="Nutura Organic Việt Nam" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105">
           <span class="text-xs font-bold uppercase tracking-widest text-[#FF6F78] border-l-2 border-[#FF6F78] pl-2 hidden sm:inline-block">Việt Nam</span>
         </a>
 
-        <!-- Desktop Navigation Menu -->
-        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
-          <a href="index.html" class="nav-link text-stone-700">Trang Chủ</a>
-
-          <!-- Dropdown Sản Phẩm -->
-          <div class="relative group">
-            <a href="shop.html" class="nav-link text-stone-700 inline-flex items-center gap-1">
-              <span>Sản Phẩm</span>
+        <!-- Desktop Navigation Menu (Tối đa 5 mục, 1 dòng ở 1280px) -->
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-medium">
+          <!-- Mục 1: Sản phẩm Dropdown -->
+          <div class="relative group py-2">
+            <button type="button" class="nav-link text-stone-700 hover:text-[#FF6F78] inline-flex items-center gap-1 focus:outline-none">
+              <span>Sản phẩm</span>
               <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
-            </a>
+            </button>
             <div class="dropdown-menu absolute left-0 top-full pt-2 w-72 z-50">
               <div class="bg-white rounded-2xl shadow-xl border border-stone-100 p-3 space-y-1">
-                <div class="px-3 py-1.5 text-xs font-bold text-stone-400 uppercase tracking-wider">Sữa Hữu Cơ Công Thức</div>
+                <div class="px-3 py-1.5 text-[11px] font-bold text-stone-400 uppercase tracking-wider">Thông tin sản phẩm theo nhãn</div>
                 <a href="product-stage1.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-rose-50 transition group/item">
                   <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xs">S1</div>
                   <div>
-                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Giai Đoạn 1 (0 - 6 tháng)</div>
-                    <div class="text-[11px] text-stone-500">Đạm tươi A2, Tỷ lệ Whey vượt trội</div>
+                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Stage 1 (0 - 6 tháng)</div>
+                    <div class="text-[11px] text-stone-500">Đạm A2, đạm whey 60% theo TCCS</div>
                   </div>
                 </a>
                 <a href="product-stage2.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-rose-50 transition group/item">
                   <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-xs">S2</div>
                   <div>
-                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Giai Đoạn 2 (6 - 12 tháng)</div>
-                    <div class="text-[11px] text-stone-500">Đạm Casein cân đối, Giàu DHA & GOS</div>
+                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Stage 2 (6 - 12 tháng)</div>
+                    <div class="text-[11px] text-stone-500">Đạm casein 60%, có DHA & GOS/FOS</div>
                   </div>
                 </a>
                 <a href="product-stage3.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-rose-50 transition group/item">
                   <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-xs">S3</div>
                   <div>
-                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Giai Đoạn 3 (12 - 36 tháng)</div>
-                    <div class="text-[11px] text-stone-500">16 Vitamin & Khoáng chất thiết yếu</div>
+                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Stage 3 (12 - 36 tháng)</div>
+                    <div class="text-[11px] text-stone-500">16 vitamin & khoáng chất theo nhãn</div>
                   </div>
-                </a>
-                <div class="border-t border-stone-100 my-1"></div>
-                <a href="shop.html" class="block text-center py-2 text-xs font-bold text-[#FF6F78] hover:underline bg-rose-50/50 rounded-xl mt-1">
-                  Xem 3 Giai Đoạn Sữa Nutura &rarr;
                 </a>
               </div>
             </div>
           </div>
 
-          <a href="fresh-milk-difference.html" class="nav-link text-stone-700">Sự Khác Biệt Sữa Tươi</a>
-          <a href="certified-organic.html" class="nav-link text-stone-700">Chứng Nhận Hữu Cơ</a>
-          <a href="about-us.html" class="nav-link text-stone-700">Về Chúng Tôi</a>
-          <a href="village.html" class="nav-link active font-bold text-[#FF6F78]">Ngôi Làng Nutura</a>
-          <a href="subscriptions.html" class="nav-link text-stone-700 text-rose-600 font-semibold">Gói Định Kỳ -15%</a>
-          <a href="faqs.html" class="nav-link text-stone-700">Hỏi Đáp</a>
-          <a href="contact.html" class="nav-link text-stone-700">Liên Hệ</a>
+          <!-- Mục 2: Sữa tươi farmgate -->
+          <a href="fresh-milk-difference.html" class="nav-link text-stone-700 hover:text-[#FF6F78]">Sữa tươi farmgate</a>
+
+          <!-- Mục 3: Hữu cơ -->
+          <a href="certified-organic.html" class="nav-link text-stone-700 hover:text-[#FF6F78]">Hữu cơ</a>
+
+          <!-- Mục 4: Góc cha mẹ -->
+          <a href="village.html" class="nav-link active font-bold text-[#FF6F78]">Góc cha mẹ</a>
+
+          <!-- Mục 5: Liên hệ -->
+          <a href="contact.html" class="nav-link text-stone-700 hover:text-[#FF6F78]">Liên hệ</a>
         </nav>
 
-        <!-- Right Action Buttons -->
-        <div class="flex items-center gap-3 sm:gap-4">
-          <!-- Search -->
-          <a href="shop.html" title="Tìm kiếm sản phẩm" aria-label="Tìm kiếm sản phẩm" class="p-2 text-stone-600 hover:text-[#FF6F78] transition rounded-full hover:bg-stone-100 min-h-[44px] min-w-[44px] flex items-center justify-center">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        <!-- Right CTA: Tìm điểm bán -->
+        <div class="flex items-center gap-3">
+          <a href="contact.html#diem-ban" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-stone-300 text-stone-700 hover:border-[#FF6F78] hover:text-[#FF6F78] text-xs font-bold transition">
+            <svg class="w-4 h-4 text-[#FF6F78]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
             </svg>
-          </a>
-
-          <!-- Cart Button with Live Badge -->
-          <button id="openCartBtn" aria-label="Mở giỏ hàng" class="open-cart-btn relative p-2 text-stone-700 hover:text-[#FF6F78] transition rounded-full hover:bg-stone-100 flex items-center justify-center min-h-[44px] min-w-[44px]">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-            </svg>
-            <span class="cart-count-badge absolute -top-1 -right-1 w-5 h-5 bg-[#FF6F78] text-white text-[11px] font-bold rounded-full flex items-center justify-center border-2 border-white shadow-sm" style="display:none;" aria-live="polite">0</span>
-          </button>
-
-          <!-- CTA Buy Now -->
-          <a href="shop.html" class="btn-nutura-primary text-xs sm:text-sm py-2 px-4 sm:px-5 hidden sm:inline-flex">
-            <span>Mua Sắm Ngay</span>
+            <span>Tìm điểm bán</span>
           </a>
 
           <!-- Mobile Hamburger Toggle -->
-          <button id="mobileMenuToggleBtn" aria-label="Mở menu di động" class="lg:hidden p-2 text-stone-700 hover:text-[#FF6F78] rounded-xl hover:bg-stone-100 transition min-h-[44px] min-w-[44px] flex items-center justify-center">
+          <button id="mobileMenuToggleBtn" aria-label="Mở menu điều hướng" class="lg:hidden p-2 text-stone-700 hover:text-[#FF6F78] rounded-xl hover:bg-stone-100 transition min-h-[44px] min-w-[44px] flex items-center justify-center">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
@@ -161,217 +142,227 @@
   <aside id="mobileNavDrawer" class="fixed top-0 left-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
     <div class="p-5 border-b border-stone-100 flex items-center justify-between">
       <img src="assets/images/nutura-logo-coral.svg" alt="Nutura" class="h-8 w-auto">
-      <button id="closeMobileNavBtn" class="p-2 text-stone-400 hover:text-stone-700 rounded-full">
+      <button id="closeMobileNavBtn" aria-label="Đóng menu" class="p-2 text-stone-400 hover:text-stone-700 rounded-full">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
     </div>
-    <div class="flex-1 overflow-y-auto p-5 space-y-3">
-      <a href="index.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Trang Chủ</a>
-      <a href="shop.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Bộ 3 Sữa Nutura (Stage 1-3)</a>
-      <div class="pl-4 space-y-2 border-l-2 border-rose-100 ml-3 text-sm">
-        <a href="product-stage1.html" class="block text-stone-600 hover:text-[#FF6F78]">Sữa Stage 1 (0-6 tháng)</a>
-        <a href="product-stage2.html" class="block text-stone-600 hover:text-[#FF6F78]">Sữa Stage 2 (6-12 tháng)</a>
-        <a href="product-stage3.html" class="block text-stone-600 hover:text-[#FF6F78]">Sữa Stage 3 (12-36 tháng)</a>
+    <div class="flex-1 overflow-y-auto p-5 space-y-2 text-sm">
+      <a href="index.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Trang chủ</a>
+      <div class="py-2 px-3 text-xs font-bold text-stone-400 uppercase tracking-wider">Sản phẩm</div>
+      <div class="pl-3 space-y-1 border-l-2 border-rose-100 ml-3 text-xs">
+        <a href="product-stage1.html" class="block py-1.5 text-stone-600 hover:text-[#FF6F78]">Stage 1 (0 - 6 tháng)</a>
+        <a href="product-stage2.html" class="block py-1.5 text-stone-600 hover:text-[#FF6F78]">Stage 2 (6 - 12 tháng)</a>
+        <a href="product-stage3.html" class="block py-1.5 text-stone-600 hover:text-[#FF6F78]">Stage 3 (12 - 36 tháng)</a>
       </div>
-      <a href="fresh-milk-difference.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Sự Khác Biệt Sữa Tươi</a>
-      <a href="certified-organic.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Chứng Nhận Hữu Cơ</a>
-      <a href="about-us.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Về Chúng Tôi</a>
-      <a href="village.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Ngôi Làng Nutura & Góc Cha Mẹ</a>
-      <a href="subscriptions.html" class="block py-2.5 px-3 rounded-xl font-bold text-rose-600 hover:bg-rose-50">Gói Giao Định Kỳ Milkman (-15%)</a>
-      <a href="faqs.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Câu Hỏi Thường Gặp (FAQs)</a>
-      <a href="contact.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Liên Hệ & Tư Vấn</a>
-      <a href="breast-is-best.html" class="block py-2.5 px-3 rounded-xl font-medium text-xs text-stone-500 hover:text-[#FF6F78]">Thông Tin Sữa Mẹ (WHO)</a>
+      <a href="fresh-milk-difference.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Sữa tươi farmgate</a>
+      <a href="certified-organic.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Hữu cơ</a>
+      <a href="about-us.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Về Nutura</a>
+      <a href="village.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Góc cha mẹ</a>
+      <a href="faqs.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Câu hỏi thường gặp</a>
+      <a href="contact.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Liên hệ & điểm bán</a>
+      <a href="breast-is-best.html" class="block py-2 px-3 rounded-xl text-xs text-stone-500 hover:text-[#FF6F78]">Thông tin sữa mẹ (WHO)</a>
     </div>
     <div class="p-5 border-t border-stone-100 bg-stone-50">
-      <a href="shop.html" class="block w-full py-3 text-center bg-[#FF6F78] text-white font-bold rounded-full text-sm shadow-md">
-        Khám Phá Cửa Hàng
+      <a href="contact.html#diem-ban" class="block w-full py-2.5 text-center bg-[#FF6F78] text-white font-bold rounded-full text-xs shadow-md">
+        Tìm điểm bán
       </a>
     </div>
   </aside>
 
-  <!-- BANNER -->
-  <section class="bg-[#FAF7F2] py-16 lg:py-20 border-b border-stone-200/60">
+  <!-- Breadcrumb -->
+  <div class="bg-[#FAF7F2] py-3.5 border-b border-stone-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs text-stone-500 flex items-center gap-2">
+      <a href="index.html" class="hover:text-[#FF6F78]">Trang chủ</a>
+      <span>/</span>
+      <span class="text-stone-800 font-bold">Góc cha mẹ</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+  <!-- Banner -->
+  <section class="bg-[#FAF7F2] py-14 lg:py-18 border-b border-stone-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div class="md:col-span-8 space-y-4">
           <span class="inline-block px-3 py-1 rounded-full bg-rose-100 text-[#FF6F78] text-xs font-bold uppercase tracking-wider">
-            Ngôi Làng Tri Thức Nutura
+            Cẩm nang nuôi con
           </span>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900">
-            Góc Cha Mẹ: Dinh Dưỡng, Cảm Xúc & Yêu Thương
+          <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-900">
+            Góc cha mẹ - Đồng hành nuôi dạy con
           </h1>
-          <p class="text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl">
-            Nơi bạn tìm thấy sự sẻ chia ấm áp và những hướng dẫn khoa học từ đội ngũ bác sĩ nhi khoa, chuyên gia dinh dưỡng và các bậc phụ huynh giàu kinh nghiệm. Bạn không bao giờ phải đơn độc trên hành trình này!
+          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed max-w-2xl">
+            Chia sẻ các bài viết khoa học về tâm lý, cảm xúc và chế độ dinh dưỡng hàng ngày giúp ba mẹ thảnh thơi hơn trên hành trình nuôi con. Các bài viết mang tính giáo dục độc lập và không quảng bá sản phẩm.
           </p>
         </div>
         <div class="md:col-span-4 text-center">
-          <img src="assets/images/banner-village.jpg" alt="Ngôi làng Nutura" class="rounded-3xl shadow-lg border-4 border-white max-h-64 mx-auto object-cover">
+          <img src="assets/images/banner-village.jpg" alt="Góc cha mẹ Nutura" class="rounded-3xl shadow-lg border-4 border-white max-h-60 mx-auto object-cover" loading="eager">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ARTICLES LIST -->
-  <section class="py-16 bg-white flex-1">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+  <!-- Danh sách 9 bài viết blog (Không chèn link sản phẩm trong bài) -->
+  <section class="py-14 bg-white flex-1">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
-      <!-- Article 1 -->
-      <article id="article-1" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-stone-100">
+      <!-- Bài 1: Đặt tên cho bé -->
+      <article id="article-1" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center pb-10 border-b border-stone-100">
         <div class="md:col-span-5">
-          <img src="assets/images/blog-baby-names.jpg" alt="Đặt tên cho bé" class="rounded-3xl w-full h-64 object-cover shadow-sm">
+          <img src="assets/images/blog-baby-names.jpg" alt="Đặt tên cho bé" class="rounded-2xl w-full h-56 object-cover shadow-sm" loading="lazy">
         </div>
-        <div class="md:col-span-7 space-y-3">
+        <div class="md:col-span-7 space-y-2.5">
           <div class="flex items-center gap-3 text-xs text-stone-400">
-            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2.5 py-1 rounded-full">Góc Cha Mẹ</span>
-            <span>Tác giả: Nutura Organic</span>
+            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2 py-0.5 rounded-full">Góc cha mẹ</span>
+            <span>Tác giả: Nutura Việt Nam</span>
           </div>
-          <h2 class="text-2xl font-bold text-stone-900">Mẹo Và Gợi Ý Khi Đặt Tên Cho Thiên Thần Nhỏ Sắp Chào Đời</h2>
-          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
-            Chúc mừng bạn sắp đón nhận một sinh linh bé bỏng! Khoảnh khắc biết mình mang thai luôn tràn ngập cảm xúc diệu kỳ xen lẫn hồi hộp. Việc lựa chọn một cái tên theo con suốt cuộc đời là quyết định quan trọng. Hãy cân nhắc ý nghĩa phong thủy, âm điệu khi gọi tên, kỷ niệm tình yêu của bố mẹ và cả sự hòa hợp giữa các thành viên trong gia đình.
+          <h2 class="text-lg sm:text-xl font-bold text-stone-900">Mẹo và gợi ý khi đặt tên cho thiên thần nhỏ sắp chào đời</h2>
+          <p class="text-stone-600 text-xs leading-relaxed">
+            Chúc mừng bạn sắp đón nhận một sinh linh bé bỏng. Việc lựa chọn một cái tên theo con suốt cuộc đời là quyết định quan trọng. Hãy cân nhắc ý nghĩa phong thủy, âm điệu khi gọi tên, kỷ niệm tình yêu của bố mẹ và sự hòa hợp giữa các thành viên trong gia đình.
           </p>
         </div>
       </article>
 
-      <!-- Article 2 -->
-      <article id="article-2" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-stone-100">
+      <!-- Bài 2: Ngày đầu đi học -->
+      <article id="article-2" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center pb-10 border-b border-stone-100">
         <div class="md:col-span-5">
-          <img src="assets/images/blog-school.jpg" alt="Ngày đầu đi học" class="rounded-3xl w-full h-64 object-cover shadow-sm">
+          <img src="assets/images/blog-school.jpg" alt="Ngày đầu đi học" class="rounded-2xl w-full h-56 object-cover shadow-sm" loading="lazy">
         </div>
-        <div class="md:col-span-7 space-y-3">
+        <div class="md:col-span-7 space-y-2.5">
           <div class="flex items-center gap-3 text-xs text-stone-400">
-            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2.5 py-1 rounded-full">Tâm Lý Thiếu Nhi</span>
+            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2 py-0.5 rounded-full">Tâm lý thiếu nhi</span>
             <span>Tác giả: Dr. Michael Carr-Gregg</span>
           </div>
-          <h2 class="text-2xl font-bold text-stone-900">Cách Chuẩn Bị Hành Trang Tâm Lý Cho Con Vào Ngày Đầu Tiên Đến Trường</h2>
-          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
-            Bước qua cánh cổng trường học là một bước ngoặt khổng lồ đối với trẻ em. Tiến sĩ Michael Carr-Gregg khuyến nghị cha mẹ nên cùng con làm quen với đường đến trường trước ngày khai giảng, đọc những cuốn sách về bạn bè lớp học và quan trọng nhất: Hãy rèn luyện cho con kỹ năng tự phục vụ cơ bản để con cảm thấy tự tin và kiểm soát được bản thân.
+          <h2 class="text-lg sm:text-xl font-bold text-stone-900">Cách chuẩn bị hành trang tâm lý cho con vào ngày đầu tiên đến trường</h2>
+          <p class="text-stone-600 text-xs leading-relaxed">
+            Bước qua cánh cổng trường học là một bước ngoặt lớn đối với trẻ em. Cha mẹ nên cùng con làm quen với đường đến trường trước ngày khai giảng, đọc những cuốn sách về bạn bè lớp học và quan trọng nhất: rèn luyện cho con kỹ năng tự phục vụ cơ bản để con cảm thấy tự tin.
           </p>
         </div>
       </article>
 
-      <!-- Article 3 -->
-      <article id="article-3" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-stone-100">
+      <!-- Bài 3: Góc người bố -->
+      <article id="article-3" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center pb-10 border-b border-stone-100">
         <div class="md:col-span-5">
-          <img src="assets/images/jimmy-rees.png" alt="Jimmy Rees" class="rounded-3xl w-full h-64 object-cover shadow-sm bg-stone-50">
+          <img src="assets/images/jimmy-rees.png" alt="Góc người bố Jimmy Rees" class="rounded-2xl w-full h-56 object-cover shadow-sm bg-stone-50" loading="lazy">
         </div>
-        <div class="md:col-span-7 space-y-3">
+        <div class="md:col-span-7 space-y-2.5">
           <div class="flex items-center gap-3 text-xs text-stone-400">
-            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2.5 py-1 rounded-full">Góc Người Bố</span>
+            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2 py-0.5 rounded-full">Góc người bố</span>
             <span>Tác giả: Jimmy Rees</span>
           </div>
-          <h2 class="text-2xl font-bold text-stone-900">Khi Mẹ Có Một Đêm Được Nghỉ Ngơi Trọn Vẹn</h2>
-          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
-            Các ông bố hãy dũng cảm bước lên nào! Nuôi con là công việc toàn thời gian không ngày nghỉ của mẹ. Một đêm mẹ được đi ngủ sớm, không phải thức dậy pha sữa hay dỗ dành con lúc 2 giờ sáng chính là món quà phục hồi tinh thần kỳ diệu nhất. Với sự hỗ trợ của một bình sữa ấm dinh dưỡng và vòng tay bố, cả nhà sẽ có một đêm êm ả.
+          <h2 class="text-lg sm:text-xl font-bold text-stone-900">Khi mẹ có một đêm được nghỉ ngơi trọn vẹn</h2>
+          <p class="text-stone-600 text-xs leading-relaxed">
+            Nuôi con là công việc toàn thời gian không ngày nghỉ của mẹ. Một đêm mẹ được đi ngủ sớm và được người bạn đời chia sẻ trách nhiệm chăm con chính là món quà phục hồi tinh thần ý nghĩa.
           </p>
         </div>
       </article>
 
-      <!-- Article 4 -->
-      <article id="article-4" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-stone-100">
+      <!-- Bài 4: Buông bỏ gánh nặng -->
+      <article id="article-4" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center pb-10 border-b border-stone-100">
         <div class="md:col-span-5">
-          <img src="assets/images/blog-lighten-load.jpg" alt="Buông bỏ gánh nặng" class="rounded-3xl w-full h-64 object-cover shadow-sm">
+          <img src="assets/images/blog-lighten-load.jpg" alt="Buông bỏ gánh nặng làm mẹ" class="rounded-2xl w-full h-56 object-cover shadow-sm" loading="lazy">
         </div>
-        <div class="md:col-span-7 space-y-3">
+        <div class="md:col-span-7 space-y-2.5">
           <div class="flex items-center gap-3 text-xs text-stone-400">
-            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2.5 py-1 rounded-full">Cảm Xúc Làm Mẹ</span>
+            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2 py-0.5 rounded-full">Cảm xúc làm mẹ</span>
             <span>Tác giả: Kirsty Levin</span>
           </div>
-          <h2 class="text-2xl font-bold text-stone-900">Học Cách Buông Bỏ Để Nhẹ Bớt Gánh Nặng Trách Nhiệm</h2>
-          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
-            Người mẹ hiện đại thường tự đặt lên vai mình áp lực phải trở thành một người mẹ hoàn hảo: Nhà cửa phải tinh tươm, con phải tăng cân chuẩn bảng, bản thân phải luôn rạng rỡ. Nhưng sự thật là: Không có người mẹ hoàn hảo, chỉ có người mẹ đủ tốt. Hãy học cách nhờ sự giúp đỡ của người thân và buông bỏ những tiêu chuẩn khắt khe không cần thiết.
+          <h2 class="text-lg sm:text-xl font-bold text-stone-900">Học cách buông bỏ để nhẹ bớt gánh nặng trách nhiệm</h2>
+          <p class="text-stone-600 text-xs leading-relaxed">
+            Người mẹ hiện đại thường tự đặt lên vai mình áp lực phải trở thành một người mẹ hoàn hảo. Hãy học cách nhờ sự giúp đỡ của người thân và buông bỏ những tiêu chuẩn khắt khe không cần thiết để tận hưởng niềm vui làm mẹ.
           </p>
         </div>
       </article>
 
-      <!-- Article 5 -->
-      <article id="article-5" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-stone-100">
+      <!-- Bài 5: Hormone hạnh phúc -->
+      <article id="article-5" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center pb-10 border-b border-stone-100">
         <div class="md:col-span-5">
-          <img src="assets/images/blog-happiness.jpg" alt="Hormone hạnh phúc" class="rounded-3xl w-full h-64 object-cover shadow-sm">
+          <img src="assets/images/blog-happiness.jpg" alt="Hormone hạnh phúc" class="rounded-2xl w-full h-56 object-cover shadow-sm" loading="lazy">
         </div>
-        <div class="md:col-span-7 space-y-3">
+        <div class="md:col-span-7 space-y-2.5">
           <div class="flex items-center gap-3 text-xs text-stone-400">
-            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2.5 py-1 rounded-full">Khoa Học Cảm Xúc</span>
+            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2 py-0.5 rounded-full">Khoa học cảm xúc</span>
             <span>Tác giả: Kirsty Levin</span>
           </div>
-          <h2 class="text-2xl font-bold text-stone-900">Bí Quyết Kích Hoạt Các Hormone Hạnh Phúc Mỗi Ngày</h2>
-          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
-            Hormone Oxytocin (hormone của tình yêu và gắn kết) được tiết ra mãnh liệt mỗi khi bạn ôm con da kề da hoặc nhìn sâu vào ánh mắt bé. Dopamine được kích hoạt khi bạn hoàn thành một mục tiêu nhỏ trong ngày. Hãy dành 10 phút tắm nắng buổi sáng để thúc đẩy Serotonin, giúp mẹ duy trì tâm trạng an vui và giàu năng lượng tích cực.
+          <h2 class="text-lg sm:text-xl font-bold text-stone-900">Bí quyết kích hoạt các hormone hạnh phúc mỗi ngày</h2>
+          <p class="text-stone-600 text-xs leading-relaxed">
+            Hormone Oxytocin được kích hoạt khi bạn ôm ấp con da kề da. Dành 10 phút tắm nắng buổi sáng để thúc đẩy Serotonin, giúp mẹ duy trì tâm trạng an vui và giàu năng lượng tích cực trong ngày.
           </p>
         </div>
       </article>
 
-      <!-- Article 6 -->
-      <article id="article-6" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-stone-100">
+      <!-- Bài 6: Sắt cho bé (Đã sửa bỏ nhắc tên sản phẩm) -->
+      <article id="article-6" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center pb-10 border-b border-stone-100">
         <div class="md:col-span-5">
-          <img src="assets/images/blog-iron.jpg" alt="Sắt cho bé" class="rounded-3xl w-full h-64 object-cover shadow-sm">
+          <img src="assets/images/blog-iron.jpg" alt="Bổ sung sắt cho bé" class="rounded-2xl w-full h-56 object-cover shadow-sm" loading="lazy">
         </div>
-        <div class="md:col-span-7 space-y-3">
+        <div class="md:col-span-7 space-y-2.5">
           <div class="flex items-center gap-3 text-xs text-stone-400">
-            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2.5 py-1 rounded-full">Dinh Dưỡng Trẻ Nhỏ</span>
+            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2 py-0.5 rounded-full">Dinh dưỡng trẻ nhỏ</span>
             <span>Tác giả: Miriam Raleigh</span>
           </div>
-          <h2 class="text-2xl font-bold text-stone-900">Bé Nhà Bạn Đã Nạp Đủ Lượng Sắt Cần Thiết Chưa?</h2>
-          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
-            Lượng sắt dự trữ từ bụng mẹ sẽ cạn dần khi bé đạt 6 tháng tuổi. Thiếu sắt ở trẻ nhỏ có thể dẫn đến xanh xao, chậm tăng cân, mệt mỏi và giảm khả năng tập trung. Hãy bổ sung thực phẩm giàu sắt heme (thịt đỏ) kết hợp cùng vitamin C để tăng hấp thu, hoặc chọn các dòng sữa có vi chất sắt sinh học như Nutura Stage 2 & 3.
+          <h2 class="text-lg sm:text-xl font-bold text-stone-900">Bé nhà bạn đã nạp đủ lượng sắt cần thiết chưa?</h2>
+          <p class="text-stone-600 text-xs leading-relaxed">
+            Lượng sắt dự trữ từ giai đoạn thai kỳ sẽ giảm dần khi bé đạt 6 tháng tuổi. Thiếu sắt ở trẻ nhỏ có thể dẫn đến mệt mỏi và chậm tăng cân. Cha mẹ hãy chú trọng bổ sung thực phẩm giàu sắt tự nhiên như thịt bò, lòng đỏ trứng, kết hợp cùng các loại rau củ giàu vitamin C để hỗ trợ hấp thu sắt tốt hơn.
           </p>
         </div>
       </article>
 
-      <!-- Article 7 -->
-      <article id="article-7" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-stone-100">
+      <!-- Bài 7: Dinh dưỡng mầm non -->
+      <article id="article-7" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center pb-10 border-b border-stone-100">
         <div class="md:col-span-5">
-          <img src="assets/images/blog-food.jpg" alt="Dinh dưỡng mầm non" class="rounded-3xl w-full h-64 object-cover shadow-sm">
+          <img src="assets/images/blog-food.jpg" alt="Dinh dưỡng mầm non" class="rounded-2xl w-full h-56 object-cover shadow-sm" loading="lazy">
         </div>
-        <div class="md:col-span-7 space-y-3">
+        <div class="md:col-span-7 space-y-2.5">
           <div class="flex items-center gap-3 text-xs text-stone-400">
-            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2.5 py-1 rounded-full">Ăn Dặm & Dinh Dưỡng</span>
+            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2 py-0.5 rounded-full">Ăn dặm & dinh dưỡng</span>
             <span>Tác giả: Miriam Raleigh</span>
           </div>
-          <h2 class="text-2xl font-bold text-stone-900">Trẻ Tuổi Mầm Non Và Mẫu Giáo Nên Ăn Những Nhóm Thực Phẩm Nào?</h2>
-          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
-            Hai năm đầu đời là giai đoạn thể chất và não bộ phát triển vũ bão. Khi bước vào tuổi mẫu giáo (3 - 5 tuổi), trẻ cần chế độ ăn đa dạng màu sắc với ngũ cốc nguyên cám, đạm nạc, rau xanh đậm, trái cây tươi và sữa dinh dưỡng để bổ sung Canxi cho xương chắc khỏe.
+          <h2 class="text-lg sm:text-xl font-bold text-stone-900">Trẻ tuổi mầm non và mẫu giáo nên ăn những nhóm thực phẩm nào?</h2>
+          <p class="text-stone-600 text-xs leading-relaxed">
+            Giai đoạn mẫu giáo trẻ vận động rất nhiều. Trẻ cần chế độ ăn đa dạng với các nhóm: tinh bột nguyên cám, chất đạm nạc, rau xanh đậm và trái cây tươi để cung cấp đầy đủ vitamin và khoáng chất thiết yếu.
           </p>
         </div>
       </article>
 
-      <!-- Article 8 -->
-      <article id="article-8" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-stone-100">
+      <!-- Bài 8: Gắn bó an toàn -->
+      <article id="article-8" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center pb-10 border-b border-stone-100">
         <div class="md:col-span-5">
-          <img src="assets/images/blog-attachment.jpg" alt="Gắn bó an toàn" class="rounded-3xl w-full h-64 object-cover shadow-sm">
+          <img src="assets/images/blog-attachment.jpg" alt="Gắn bó an toàn với con" class="rounded-2xl w-full h-56 object-cover shadow-sm" loading="lazy">
         </div>
-        <div class="md:col-span-7 space-y-3">
+        <div class="md:col-span-7 space-y-2.5">
           <div class="flex items-center gap-3 text-xs text-stone-400">
-            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2.5 py-1 rounded-full">Tâm Lý Phát Triển</span>
+            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2 py-0.5 rounded-full">Tâm lý phát triển</span>
             <span>Tác giả: Kirsty Levin</span>
           </div>
-          <h2 class="text-2xl font-bold text-stone-900">Gắn Bó An Toàn (Secure Attachment) Là Gì Và Vì Sao Quan Trọng?</h2>
-          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
-            Gắn bó an toàn được hình thành khi người chăm sóc phản hồi nhất quán, kịp thời và yêu thương trước những tín hiệu khóc, đói, cần ôm ấp của trẻ. Đây chính là 'bệ phóng' giúp con lớn lên tự tin, dễ dàng kết bạn và kiên cường vượt qua nghịch cảnh trong tương lai.
+          <h2 class="text-lg sm:text-xl font-bold text-stone-900">Gắn bó an toàn (Secure Attachment) là gì và vì sao quan trọng?</h2>
+          <p class="text-stone-600 text-xs leading-relaxed">
+            Gắn bó an toàn được hình thành khi cha mẹ phản hồi nhất quán, kịp thời và yêu thương trước những tín hiệu khóc hay cần ôm ấp của trẻ. Đây chính là điểm tựa cảm xúc giúp con lớn lên tự tin và kiên cường.
           </p>
         </div>
       </article>
 
-      <!-- Article 9 -->
-      <article id="article-9" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <!-- Bài 9: Khám phá xúc giác -->
+      <article id="article-9" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
         <div class="md:col-span-5">
-          <img src="assets/images/blog-touch.jpg" alt="Khám phá xúc giác" class="rounded-3xl w-full h-64 object-cover shadow-sm">
+          <img src="assets/images/blog-touch.jpg" alt="Khám phá xúc giác của trẻ" class="rounded-2xl w-full h-56 object-cover shadow-sm" loading="lazy">
         </div>
-        <div class="md:col-span-7 space-y-3">
+        <div class="md:col-span-7 space-y-2.5">
           <div class="flex items-center gap-3 text-xs text-stone-400">
-            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2.5 py-1 rounded-full">Khoa Học Não Bộ</span>
+            <span class="font-bold text-[#FF6F78] bg-rose-50 px-2 py-0.5 rounded-full">Khoa học cảm giác</span>
             <span>Tác giả: Dr. Michael Carr-Gregg</span>
           </div>
-          <h2 class="text-2xl font-bold text-stone-900">Khám Phá Diệu Kỳ Về Xúc Giác Của Trẻ Sơ Sinh</h2>
-          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
-            Xúc giác là giác quan đầu tiên phát triển trong bào thai và là phương tiện đầu tiên giúp trẻ kết nối với thế giới bên ngoài. Massage nhẹ nhàng cho bé trước giờ ngủ không chỉ giúp bé ngủ sâu mà còn thúc đẩy sản xuất hormone tăng trưởng và củng cố liên kết thần kinh.
+          <h2 class="text-lg sm:text-xl font-bold text-stone-900">Khám phá xúc giác của trẻ sơ sinh</h2>
+          <p class="text-stone-600 text-xs leading-relaxed">
+            Xúc giác là giác quan đầu tiên phát triển trong thai kỳ. Massage nhẹ nhàng cho bé trước giờ ngủ giúp bé thư giãn, ngủ sâu và tăng cường sự gắn kết mật thiết giữa cha mẹ và con nhỏ.
           </p>
         </div>
       </article>
 
     </div>
   </section>
+  </main>
 
   <!-- Wave Divider Footer -->
   <div class="wave-divider -mb-1">
@@ -381,85 +372,67 @@
   <!-- Global Footer -->
   <footer class="bg-[#1C120D] text-stone-300 pt-16 pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         <!-- Brand Info -->
-        <div class="lg:col-span-2 space-y-4">
-          <img src="assets/images/nutura-logo-rev.svg" alt="Nutura Organic" class="h-10 w-auto">
-          <p class="text-sm text-stone-400 leading-relaxed max-w-sm">
-            Nutura Organic - Dòng sữa dinh dưỡng và sữa công thức hữu cơ cao cấp sản xuất 100% tại Úc. Được tạo nên bởi các chuyên gia dinh dưỡng và nông dân tận tâm nhằm đồng hành cùng ngôi làng nuôi con của bạn.
+        <div class="space-y-4">
+          <img src="assets/images/nutura-logo-rev.svg" alt="Nutura Organic" class="h-9 w-auto">
+          <p class="text-xs text-stone-400 leading-relaxed">
+            Nutura Organic - Sản phẩm dinh dưỡng công thức hữu cơ sản xuất 100% tại Victoria, Úc từ sữa tươi nguyên liệu farmgate. Nhãn sản phẩm thể hiện logo chứng nhận hữu cơ ACO.
           </p>
-          <div class="flex items-center gap-4 pt-2">
-            <img src="assets/images/aco-logo.png" alt="Australian Certified Organic" class="h-12 w-auto bg-white p-1 rounded-lg">
-            <img src="assets/images/icon-aus-made.png" alt="Australian Made and Owned" class="h-12 w-auto bg-white p-1 rounded-lg">
+          <div class="flex items-center gap-3 pt-1">
+            <img src="assets/images/aco-logo.png" alt="Australian Certified Organic" class="h-10 w-auto bg-white p-1 rounded-lg">
+            <img src="assets/images/icon-aus-made.png" alt="Australian Made and Owned" class="h-10 w-auto bg-white p-1 rounded-lg">
           </div>
-          <p class="text-xs text-stone-500 pt-1">
-            🌱 Xem thành phần, chứng nhận và hướng dẫn sử dụng trên nhãn từng sản phẩm.
-          </p>
         </div>
 
         <!-- Products Column -->
         <div>
-          <h4 class="text-white text-base font-bold mb-4 font-heading">Dòng Sữa Hữu Cơ</h4>
-          <ul class="space-y-2.5 text-sm">
+          <h4 class="text-white text-sm font-bold mb-4 font-heading">Thông tin sản phẩm</h4>
+          <ul class="space-y-2 text-xs text-stone-400">
             <li><a href="product-stage1.html" class="hover:text-[#FF6F78] transition">Stage 1 (0 - 6 tháng)</a></li>
             <li><a href="product-stage2.html" class="hover:text-[#FF6F78] transition">Stage 2 (6 - 12 tháng)</a></li>
             <li><a href="product-stage3.html" class="hover:text-[#FF6F78] transition">Stage 3 (12 - 36 tháng)</a></li>
-            <li><a href="subscriptions.html" class="text-rose-400 hover:text-white transition font-medium">Gói Giao Định Kỳ Milkman (-15%)</a></li>
+            <li><a href="contact.html#diem-ban" class="hover:text-[#FF6F78] transition font-semibold text-rose-300">Tìm điểm bán</a></li>
           </ul>
         </div>
 
-        <!-- Company & Science -->
+        <!-- Navigation Links -->
         <div>
-          <h4 class="text-white text-base font-bold mb-4 font-heading">Về Nutura</h4>
-          <ul class="space-y-2.5 text-sm">
-            <li><a href="fresh-milk-difference.html" class="hover:text-[#FF6F78] transition">Sự Khác Biệt Sữa Tươi</a></li>
-            <li><a href="certified-organic.html" class="hover:text-[#FF6F78] transition">Chứng Nhận Hữu Cơ</a></li>
-            <li><a href="about-us.html" class="hover:text-[#FF6F78] transition">Câu Chuyện & Lịch Sử</a></li>
-            <li><a href="about-us.html#team" class="hover:text-[#FF6F78] transition">Đội Ngũ Chuyên Gia</a></li>
-            <li><a href="village.html" class="hover:text-[#FF6F78] transition">Ngôi Làng Tri Thức (Blog)</a></li>
-            <li><a href="faqs.html" class="hover:text-[#FF6F78] transition">Câu Hỏi Thường Gặp</a></li>
-            <li><a href="contact.html" class="hover:text-[#FF6F78] transition">Liên Hệ Tư Vấn</a></li>
-            <li><a href="breast-is-best.html" class="hover:text-[#FF6F78] transition">Thông Tin Sữa Mẹ</a></li>
+          <h4 class="text-white text-sm font-bold mb-4 font-heading">Về Nutura</h4>
+          <ul class="space-y-2 text-xs text-stone-400">
+            <li><a href="about-us.html" class="hover:text-[#FF6F78] transition">Câu chuyện & nhà máy Victoria</a></li>
+            <li><a href="fresh-milk-difference.html" class="hover:text-[#FF6F78] transition">Sự khác biệt sữa tươi farmgate</a></li>
+            <li><a href="certified-organic.html" class="hover:text-[#FF6F78] transition">Chứng nhận hữu cơ ACO</a></li>
+            <li><a href="village.html" class="hover:text-[#FF6F78] transition">Góc cha mẹ (Cẩm nang nuôi con)</a></li>
+            <li><a href="faqs.html" class="hover:text-[#FF6F78] transition">Câu hỏi thường gặp</a></li>
+            <li><a href="breast-is-best.html" class="hover:text-[#FF6F78] transition">Thông tin sữa mẹ (WHO)</a></li>
           </ul>
         </div>
 
-        <!-- Newsletter & Contact -->
-        <div>
-          <h4 class="text-white text-base font-bold mb-4 font-heading">Nhận Bản Tin Ngôi Làng</h4>
-          <p class="text-xs text-stone-400 mb-3">
-            Đăng ký để nhận kiến thức dinh dưỡng từ chuyên gia và ưu đãi giảm 10% cho đơn hàng đầu tiên.
-          </p>
-          <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký nhận bản tin từ Nutura!');" class="space-y-2">
-            <input type="email" required placeholder="Nhập địa chỉ email của bạn..." class="w-full px-3.5 py-2.5 text-xs bg-stone-800 border border-stone-700 rounded-xl text-white placeholder-stone-500 focus:outline-none focus:border-[#FF6F78]">
-            <button type="submit" class="w-full py-2.5 px-4 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-xl transition">
-              Đăng Ký Ngay
-            </button>
-          </form>
-          <div class="mt-5 pt-4 border-t border-stone-800 text-xs text-stone-400 space-y-1">
-            <p><strong>Hotline:</strong> 1800 827 957</p>
-            <p><strong>Email:</strong> info@nutura.com.au / cskh@nutura.vn</p>
+        <!-- Legal Entity & Contact -->
+        <div class="space-y-3 text-xs text-stone-400">
+          <h4 class="text-white text-sm font-bold mb-4 font-heading">Đơn vị chịu trách nhiệm</h4>
+          <p class="font-semibold text-stone-200">Công ty TNHH EVA Premium Mom and Baby</p>
+          <p>EVA Premium Mom and Baby Co., Ltd.</p>
+          <p>Địa chỉ: Tỉnh Lâm Đồng, Việt Nam</p>
+          <p>Mã số thuế: Đang cập nhật (chưa xác minh)</p>
+          <div class="pt-2 border-t border-stone-800 space-y-1">
+            <p><strong class="text-stone-300">Hotline:</strong> 1800 827 957</p>
+            <p><strong class="text-stone-300">Email:</strong> lienhe@nuturavietnam.vn</p>
+            <p><strong class="text-stone-300">Nhà sản xuất:</strong> Nutura Organic Ltd, Mulgrave VIC, Australia</p>
           </div>
         </div>
       </div>
 
-      <!-- Payment Icons & Copyright -->
-      <div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-        <div>
-          <p>© 2026 Nutura Organic. Phiên bản tiếng Việt độc quyền chính thức.</p>
-          <p class="mt-1">Sản xuất tại Victoria, Australia. Nhập khẩu và phân phối chính ngạch.</p>
-        </div>
-        <div class="flex items-center gap-3">
-          <img src="assets/images/logo-visa.svg" alt="Visa" class="h-6 w-auto opacity-75">
-          <img src="assets/images/logo-mastercard.svg" alt="Mastercard" class="h-6 w-auto opacity-75">
-          <img src="assets/images/logo-amex.svg" alt="Amex" class="h-6 w-auto opacity-75">
-          <span class="px-2 py-1 bg-stone-800 text-stone-300 rounded text-[10px] font-semibold">VietQR</span>
-          <span class="px-2 py-1 bg-stone-800 text-stone-300 rounded text-[10px] font-semibold">COD</span>
-        </div>
+      <!-- Copyright -->
+      <div class="border-t border-stone-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] text-stone-500">
+        <p>© 2026 Nutura Việt Nam. Trang thông tin thương hiệu & tra cứu thông tin theo nhãn sản phẩm.</p>
+        <p>Sản xuất tại Victoria, Australia. Nhập khẩu chính ngạch.</p>
       </div>
 
-      <!-- Medical Notice Footer -->
-      <div class="mt-8 p-4 bg-stone-900/60 rounded-xl text-[11px] text-stone-400 leading-relaxed text-center max-w-4xl mx-auto border border-stone-800">
-        <strong>Thông điệp y tế quan trọng:</strong> Sữa mẹ là thức ăn tốt nhất cho sự phát triển toàn diện của trẻ sơ sinh và trẻ nhỏ. Thông tin trên website mang tính chất giáo dục và giới thiệu khoa học dinh dưỡng.
+      <!-- Medical Notice Footer (NĐ100/2014/NĐ-CP) -->
+      <div class="mt-6 p-4 bg-stone-900/60 rounded-xl text-[11px] text-stone-400 leading-relaxed text-center max-w-4xl mx-auto border border-stone-800">
+        <strong>Thông điệp y tế:</strong> Sữa mẹ là thức ăn tốt nhất cho sức khoẻ và sự phát triển toàn diện của trẻ nhỏ. Thông tin trên website mang tính chất giáo dục và tra cứu theo nhãn sản phẩm, không thay thế cho lời khuyên của bác sĩ hay cán bộ y tế.
       </div>
     </div>
   </footer>

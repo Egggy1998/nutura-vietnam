@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sữa Hữu Cơ Nutura Stage 3 (12 - 36 tháng) 800g | Thông Tin Theo Nhãn Sản Phẩm | Nutura Organic Việt Nam</title>
-  <meta name="description" content="Sữa dinh dưỡng hữu cơ Nutura Stage 3 cho trẻ từ 1 đến 3 tuổi; mỗi khẩu phần 230 ml cung cấp 216 mg canxi, 2,5 µg vitamin D và 33 mg DHA theo nhãn sản phẩm.">
+  <title>Nutura Organic A2 Protein Toddler Milk Drink Stage 3 (12 - 36 tháng) 800g | Nutura Organic Việt Nam</title>
+  <meta name="description" content="Thông tin sản phẩm dinh dưỡng công thức Nutura Organic Stage 3 cho trẻ từ 1 đến 3 tuổi; đạm A2 hữu cơ từ Úc, cung cấp 16 vitamin và khoáng chất thiết yếu theo nhãn.">
   <link rel="canonical" href="product-stage3.html">
-  <link rel="shortcut icon" href="https://www.nutura.com.au/favicon.ico">
+  <link rel="shortcut icon" href="assets/images/nutura-logo-coral.svg">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -45,108 +45,89 @@
 <body class="bg-white text-stone-800 flex flex-col min-h-screen">
   <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-bar py-2 px-4 text-center">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
-      <div class="flex items-center gap-2 mx-auto sm:mx-0">
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span>🌿 <strong>Nutura Organic:</strong> Sữa Hữu Cơ Đạm A2 Từ Úc | Logo ACO Trên Nhãn Stage 1–3</span>
-      </div>
-      <div class="flex items-center gap-4 text-xs">
-        <span class="hidden md:inline">🚚 Miễn phí vận chuyển đơn từ 1.000.000 đ</span>
-        <a href="tel:1800827957" class="hover:text-rose-200 transition font-semibold">📞 Hotline: 1800 827 957</a>
-        <a href="subscriptions.html" class="bg-rose-500 hover:bg-rose-600 px-2.5 py-0.5 rounded-full text-white font-bold transition">Tiết kiệm 15%</a>
-      </div>
+  <!-- Mandatory Breast Milk Statement (NĐ100/2014/NĐ-CP & WHO) -->
+  <aside aria-label="Thông điệp y tế bắt buộc" class="bg-amber-50 border-b border-amber-200 text-stone-800 py-3 px-4 text-center text-sm font-semibold">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <svg class="w-4 h-4 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+      </svg>
+      <span>Sữa mẹ là thức ăn tốt nhất cho sức khoẻ và sự phát triển toàn diện của trẻ nhỏ.</span>
     </div>
-  </div>
+  </aside>
 
-  <!-- Main Header & Navigation -->
-  <header class="navbar-sticky">
+  <!-- Main Header & Navigation (5 mục menu chính) -->
+  <header class="navbar-sticky bg-white/95 backdrop-blur border-b border-stone-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
-          <img src="assets/images/nutura-logo-coral.svg" alt="Nutura Organic Vietnam" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105">
+          <img src="assets/images/nutura-logo-coral.svg" alt="Nutura Organic Việt Nam" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105">
           <span class="text-xs font-bold uppercase tracking-widest text-[#FF6F78] border-l-2 border-[#FF6F78] pl-2 hidden sm:inline-block">Việt Nam</span>
         </a>
 
-        <!-- Desktop Navigation Menu -->
-        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
-          <a href="index.html" class="nav-link text-stone-700">Trang Chủ</a>
-
-          <!-- Dropdown Sản Phẩm -->
-          <div class="relative group">
-            <a href="shop.html" class="nav-link active font-bold text-[#FF6F78] inline-flex items-center gap-1">
-              <span>Sản Phẩm</span>
+        <!-- Desktop Navigation Menu (Tối đa 5 mục, 1 dòng ở 1280px) -->
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-medium">
+          <!-- Mục 1: Sản phẩm Dropdown -->
+          <div class="relative group py-2">
+            <button type="button" class="nav-link active font-bold text-[#FF6F78] inline-flex items-center gap-1 focus:outline-none">
+              <span>Sản phẩm</span>
               <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
-            </a>
+            </button>
             <div class="dropdown-menu absolute left-0 top-full pt-2 w-72 z-50">
               <div class="bg-white rounded-2xl shadow-xl border border-stone-100 p-3 space-y-1">
-                <div class="px-3 py-1.5 text-xs font-bold text-stone-400 uppercase tracking-wider">Sữa Hữu Cơ Công Thức</div>
+                <div class="px-3 py-1.5 text-[11px] font-bold text-stone-400 uppercase tracking-wider">Thông tin sản phẩm theo nhãn</div>
                 <a href="product-stage1.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-rose-50 transition group/item">
                   <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xs">S1</div>
                   <div>
-                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Giai Đoạn 1 (0 - 6 tháng)</div>
-                    <div class="text-[11px] text-stone-500">Đạm tươi A2, Tỷ lệ Whey vượt trội</div>
+                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Stage 1 (0 - 6 tháng)</div>
+                    <div class="text-[11px] text-stone-500">Đạm A2, đạm whey 60% theo TCCS</div>
                   </div>
                 </a>
                 <a href="product-stage2.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-rose-50 transition group/item">
                   <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-xs">S2</div>
                   <div>
-                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Giai Đoạn 2 (6 - 12 tháng)</div>
-                    <div class="text-[11px] text-stone-500">Đạm Casein cân đối, Giàu DHA & GOS</div>
+                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Stage 2 (6 - 12 tháng)</div>
+                    <div class="text-[11px] text-stone-500">Đạm casein 60%, có DHA & GOS/FOS</div>
                   </div>
                 </a>
                 <a href="product-stage3.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-rose-50 transition group/item">
                   <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-xs">S3</div>
                   <div>
-                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Giai Đoạn 3 (12 - 36 tháng)</div>
-                    <div class="text-[11px] text-stone-500">16 Vitamin & Khoáng chất thiết yếu</div>
+                    <div class="text-xs font-bold text-stone-800 group-hover/item:text-[#FF6F78]">Stage 3 (12 - 36 tháng)</div>
+                    <div class="text-[11px] text-stone-500">16 vitamin & khoáng chất theo nhãn</div>
                   </div>
-                </a>
-                <div class="border-t border-stone-100 my-1"></div>
-                <a href="shop.html" class="block text-center py-2 text-xs font-bold text-[#FF6F78] hover:underline bg-rose-50/50 rounded-xl mt-1">
-                  Xem 3 Giai Đoạn Sữa Nutura &rarr;
                 </a>
               </div>
             </div>
           </div>
 
-          <a href="fresh-milk-difference.html" class="nav-link text-stone-700">Sự Khác Biệt Sữa Tươi</a>
-          <a href="certified-organic.html" class="nav-link text-stone-700">Chứng Nhận Hữu Cơ</a>
-          <a href="about-us.html" class="nav-link text-stone-700">Về Chúng Tôi</a>
-          <a href="village.html" class="nav-link text-stone-700">Ngôi Làng Nutura</a>
-          <a href="subscriptions.html" class="nav-link text-stone-700 text-rose-600 font-semibold">Gói Định Kỳ -15%</a>
-          <a href="faqs.html" class="nav-link text-stone-700">Hỏi Đáp</a>
-          <a href="contact.html" class="nav-link text-stone-700">Liên Hệ</a>
+          <!-- Mục 2: Sữa tươi farmgate -->
+          <a href="fresh-milk-difference.html" class="nav-link text-stone-700 hover:text-[#FF6F78]">Sữa tươi farmgate</a>
+
+          <!-- Mục 3: Hữu cơ -->
+          <a href="certified-organic.html" class="nav-link text-stone-700 hover:text-[#FF6F78]">Hữu cơ</a>
+
+          <!-- Mục 4: Góc cha mẹ -->
+          <a href="village.html" class="nav-link text-stone-700 hover:text-[#FF6F78]">Góc cha mẹ</a>
+
+          <!-- Mục 5: Liên hệ -->
+          <a href="contact.html" class="nav-link text-stone-700 hover:text-[#FF6F78]">Liên hệ</a>
         </nav>
 
-        <!-- Right Action Buttons -->
-        <div class="flex items-center gap-3 sm:gap-4">
-          <!-- Search -->
-          <a href="shop.html" title="Tìm kiếm sản phẩm" aria-label="Tìm kiếm sản phẩm" class="p-2 text-stone-600 hover:text-[#FF6F78] transition rounded-full hover:bg-stone-100 min-h-[44px] min-w-[44px] flex items-center justify-center">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        <!-- Right CTA: Tìm điểm bán -->
+        <div class="flex items-center gap-3">
+          <a href="contact.html#diem-ban" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-stone-300 text-stone-700 hover:border-[#FF6F78] hover:text-[#FF6F78] text-xs font-bold transition">
+            <svg class="w-4 h-4 text-[#FF6F78]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
             </svg>
-          </a>
-
-          <!-- Cart Button with Live Badge -->
-          <button id="openCartBtn" aria-label="Mở giỏ hàng" class="open-cart-btn relative p-2 text-stone-700 hover:text-[#FF6F78] transition rounded-full hover:bg-stone-100 flex items-center justify-center min-h-[44px] min-w-[44px]">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-            </svg>
-            <span class="cart-count-badge absolute -top-1 -right-1 w-5 h-5 bg-[#FF6F78] text-white text-[11px] font-bold rounded-full flex items-center justify-center border-2 border-white shadow-sm" style="display:none;" aria-live="polite">0</span>
-          </button>
-
-          <!-- CTA Buy Now -->
-          <a href="shop.html" class="btn-nutura-primary text-xs sm:text-sm py-2 px-4 sm:px-5 hidden sm:inline-flex">
-            <span>Mua Sắm Ngay</span>
+            <span>Tìm điểm bán</span>
           </a>
 
           <!-- Mobile Hamburger Toggle -->
-          <button id="mobileMenuToggleBtn" aria-label="Mở menu di động" class="lg:hidden p-2 text-stone-700 hover:text-[#FF6F78] rounded-xl hover:bg-stone-100 transition min-h-[44px] min-w-[44px] flex items-center justify-center">
+          <button id="mobileMenuToggleBtn" aria-label="Mở menu điều hướng" class="lg:hidden p-2 text-stone-700 hover:text-[#FF6F78] rounded-xl hover:bg-stone-100 transition min-h-[44px] min-w-[44px] flex items-center justify-center">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
@@ -161,99 +142,262 @@
   <aside id="mobileNavDrawer" class="fixed top-0 left-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
     <div class="p-5 border-b border-stone-100 flex items-center justify-between">
       <img src="assets/images/nutura-logo-coral.svg" alt="Nutura" class="h-8 w-auto">
-      <button id="closeMobileNavBtn" class="p-2 text-stone-400 hover:text-stone-700 rounded-full">
+      <button id="closeMobileNavBtn" aria-label="Đóng menu" class="p-2 text-stone-400 hover:text-stone-700 rounded-full">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
     </div>
-    <div class="flex-1 overflow-y-auto p-5 space-y-3">
-      <a href="index.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Trang Chủ</a>
-      <a href="shop.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Bộ 3 Sữa Nutura (Stage 1-3)</a>
-      <div class="pl-4 space-y-2 border-l-2 border-rose-100 ml-3 text-sm">
-        <a href="product-stage1.html" class="block text-stone-600 hover:text-[#FF6F78]">Sữa Stage 1 (0-6 tháng)</a>
-        <a href="product-stage2.html" class="block text-stone-600 hover:text-[#FF6F78]">Sữa Stage 2 (6-12 tháng)</a>
-        <a href="product-stage3.html" class="block text-stone-600 hover:text-[#FF6F78]">Sữa Stage 3 (12-36 tháng)</a>
+    <div class="flex-1 overflow-y-auto p-5 space-y-2 text-sm">
+      <a href="index.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Trang chủ</a>
+      <div class="py-2 px-3 text-xs font-bold text-stone-400 uppercase tracking-wider">Sản phẩm</div>
+      <div class="pl-3 space-y-1 border-l-2 border-rose-100 ml-3 text-xs">
+        <a href="product-stage1.html" class="block py-1.5 text-stone-600 hover:text-[#FF6F78]">Stage 1 (0 - 6 tháng)</a>
+        <a href="product-stage2.html" class="block py-1.5 text-stone-600 hover:text-[#FF6F78]">Stage 2 (6 - 12 tháng)</a>
+        <a href="product-stage3.html" class="block py-1.5 text-stone-600 hover:text-[#FF6F78]">Stage 3 (12 - 36 tháng)</a>
       </div>
-      <a href="fresh-milk-difference.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Sự Khác Biệt Sữa Tươi</a>
-      <a href="certified-organic.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Chứng Nhận Hữu Cơ</a>
-      <a href="about-us.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Về Chúng Tôi</a>
-      <a href="village.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Ngôi Làng Nutura & Góc Cha Mẹ</a>
-      <a href="subscriptions.html" class="block py-2.5 px-3 rounded-xl font-bold text-rose-600 hover:bg-rose-50">Gói Giao Định Kỳ Milkman (-15%)</a>
-      <a href="faqs.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Câu Hỏi Thường Gặp (FAQs)</a>
-      <a href="contact.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Liên Hệ & Tư Vấn</a>
-      <a href="breast-is-best.html" class="block py-2.5 px-3 rounded-xl font-medium text-xs text-stone-500 hover:text-[#FF6F78]">Thông Tin Sữa Mẹ (WHO)</a>
+      <a href="fresh-milk-difference.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Sữa tươi farmgate</a>
+      <a href="certified-organic.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Hữu cơ</a>
+      <a href="about-us.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Về Nutura</a>
+      <a href="village.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Góc cha mẹ</a>
+      <a href="faqs.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Câu hỏi thường gặp</a>
+      <a href="contact.html" class="block py-2.5 px-3 rounded-xl font-bold text-stone-800 hover:bg-rose-50 hover:text-[#FF6F78]">Liên hệ & điểm bán</a>
+      <a href="breast-is-best.html" class="block py-2 px-3 rounded-xl text-xs text-stone-500 hover:text-[#FF6F78]">Thông tin sữa mẹ (WHO)</a>
     </div>
     <div class="p-5 border-t border-stone-100 bg-stone-50">
-      <a href="shop.html" class="block w-full py-3 text-center bg-[#FF6F78] text-white font-bold rounded-full text-sm shadow-md">
-        Khám Phá Cửa Hàng
+      <a href="contact.html#diem-ban" class="block w-full py-2.5 text-center bg-[#FF6F78] text-white font-bold rounded-full text-xs shadow-md">
+        Tìm điểm bán
       </a>
     </div>
   </aside>
 
-  <div class="bg-[#FAF7F2] py-4 border-b border-stone-200/60">
+  <!-- Breadcrumb -->
+  <div class="bg-[#FAF7F2] py-3.5 border-b border-stone-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs text-stone-500 flex items-center gap-2">
-      <a href="index.html" class="hover:text-[#FF6F78]">Trang Chủ</a>
+      <a href="index.html" class="hover:text-[#FF6F78]">Trang chủ</a>
       <span>/</span>
-      <a href="shop.html" class="hover:text-[#FF6F78]">Sản Phẩm</a>
+      <span class="text-stone-400">Sản phẩm</span>
       <span>/</span>
-      <span class="text-stone-800 font-bold">Sữa Hữu Cơ Nutura Stage 3</span>
+      <span class="text-stone-800 font-bold">Nutura Organic Stage 3</span>
     </div>
   </div>
 
-  <section class="py-12 lg:py-16 bg-white">
+  <!-- Chi tiết sản phẩm Stage 3 -->
+  <main id="main-content" class="py-10 lg:py-14 bg-white flex-1">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Gallery -->
         <div class="lg:col-span-6 space-y-4">
-          <div class="bg-[#FAF7F2] rounded-3xl p-8 border border-stone-200/80 text-center relative overflow-hidden">
-            <span class="absolute top-4 left-4 stage-badge stage-badge-s3">12 - 36 Tháng</span>
-            <span class="absolute top-4 right-4 bg-amber-100 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">Từ 12 tháng tuổi</span>
-            <img src="assets/images/stage3.png" alt="Sữa Nutura Stage 3" class="h-96 mx-auto object-contain hover:scale-105 transition duration-300">
+          <div class="bg-[#FAF7F2] rounded-3xl p-6 sm:p-10 border border-stone-200/80 text-center relative overflow-hidden">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">12 - 36 tháng</span>
+            <span class="absolute top-4 right-4 bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold">Hữu cơ ACO</span>
+            <img id="mainProductImg3" src="assets/images/stage3.png" alt="Lon sữa Nutura Organic Stage 3 800g" class="h-80 sm:h-96 mx-auto object-contain" loading="eager">
+          </div>
+          <div class="grid grid-cols-2 gap-3 max-w-xs mx-auto">
+            <button type="button" onclick="document.getElementById('mainProductImg3').src='assets/images/stage3.png'" class="p-2 bg-[#FAF7F2] rounded-2xl border border-stone-200 hover:border-[#FF6F78] transition text-center">
+              <img src="assets/images/stage3.png" alt="Mặt trước lon Stage 3" class="h-14 mx-auto object-contain">
+              <span class="block text-[10px] text-stone-600 mt-1 font-medium">Mặt trước lon</span>
+            </button>
+            <button type="button" onclick="document.getElementById('mainProductImg3').src='assets/images/aco-logo.png'" class="p-2 bg-[#FAF7F2] rounded-2xl border border-stone-200 hover:border-[#FF6F78] transition text-center">
+              <img src="assets/images/aco-logo.png" alt="Logo chứng nhận hữu cơ ACO" class="h-14 mx-auto object-contain">
+              <span class="block text-[10px] text-stone-600 mt-1 font-medium">Chứng nhận ACO</span>
+            </button>
           </div>
         </div>
 
+        <!-- Thông tin nhanh & CTA -->
         <div class="lg:col-span-6 space-y-6">
           <div class="space-y-2">
-            <div class="flex items-center gap-2">
-              <span class="text-xs text-stone-500 font-semibold">Thông tin sản phẩm theo nhãn Stage 3</span>
-            </div>
-            <h1 class="text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">
-              Sữa Dinh Dưỡng Hữu Cơ Nutura Stage 3
+            <div class="inline-block text-xs font-bold text-stone-500 uppercase tracking-wider">Thông tin sản phẩm theo nhãn & TCCS 03/2026</div>
+            <h1 class="text-2xl sm:text-3xl font-bold text-stone-900 leading-tight">
+              Nutura Organic A2 Protein Toddler Milk Drink Stage 3
             </h1>
-            <p class="text-sm font-semibold text-[#FF6F78]">Toddler Milk Drink cho bé 1 - 3 tuổi • Khối lượng tịnh: 800g</p>
+            <p class="text-sm font-semibold text-[#FF6F78]">Sản phẩm dinh dưỡng cho trẻ từ 12 đến 36 tháng tuổi</p>
           </div>
 
           <p class="text-stone-600 text-sm leading-relaxed">
-            Nutura Stage 3 dành cho trẻ từ 1 đến 3 tuổi. Theo nhãn, mỗi khẩu phần 230 ml cung cấp <strong>216 mg canxi</strong>, <strong>2,5 µg vitamin D</strong> và <strong>33 mg DHA</strong>; tỷ lệ đáp ứng nhu cầu khuyến nghị khác nhau tùy dưỡng chất.
+            Nutura Organic Stage 3 bổ sung 16 vitamin và khoáng chất thiết yếu cho giai đoạn trẻ tập đi. Nền tảng sữa tươi farmgate đạm A2 hữu cơ, có chứa DHA, ARA, GOS và FOS theo tiêu chuẩn TCCS 03/2026.
           </p>
 
+          <!-- Khối thông tin nhanh -->
           <div class="p-5 bg-[#FAF7F2] rounded-2xl border border-stone-200/80 space-y-4">
-            <div class="flex items-baseline justify-between">
+            <h3 class="text-xs font-bold text-stone-800 uppercase tracking-wider border-b border-stone-200 pb-2">Thông tin nhanh sản phẩm</h3>
+            <div class="grid grid-cols-2 gap-3 text-xs">
               <div>
-                <span class="text-3xl font-bold text-[#FF6F78]">780.000 đ</span>
-                <span class="text-xs text-stone-400 ml-2">≈ $46.00 AUD</span>
+                <span class="text-stone-500 block text-[11px]">Độ tuổi áp dụng:</span>
+                <strong class="text-stone-800">12 - 36 tháng tuổi (1 - 3 tuổi)</strong>
               </div>
-              <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2.5 py-1 rounded-full">Bán chạy nhất</span>
+              <div>
+                <span class="text-stone-500 block text-[11px]">Khối lượng tịnh:</span>
+                <strong class="text-stone-800">800g / lon</strong>
+              </div>
+              <div>
+                <span class="text-stone-500 block text-[11px]">Xuất xứ:</span>
+                <strong class="text-stone-800">Victoria, Australia</strong>
+              </div>
+              <div>
+                <span class="text-stone-500 block text-[11px]">Chứng nhận:</span>
+                <strong class="text-emerald-700">ACO Certified Organic</strong>
+              </div>
+              <div>
+                <span class="text-stone-500 block text-[11px]">Dạng bào chế:</span>
+                <strong class="text-stone-800">Bột dinh dưỡng</strong>
+              </div>
+              <div>
+                <span class="text-stone-500 block text-[11px]">Mã vạch (Barcode):</span>
+                <strong class="text-stone-800">9350758001295</strong>
+              </div>
             </div>
 
-            <div class="flex items-center gap-4 pt-2">
-              <button onclick="window.nuturaCart.addItem('stage-3', 1);" class="flex-1 py-3 px-6 bg-[#FF6F78] hover:bg-[#E65A63] text-white font-bold rounded-full transition shadow-lg shadow-[#FF6F78]/30 text-sm flex items-center justify-center gap-2">
-                <span>Thêm Vào Giỏ Hàng</span>
-              </button>
-              <a href="subscriptions.html" class="py-3 px-5 rounded-full border border-stone-300 font-semibold text-xs text-stone-700 hover:bg-stone-50">
-                Giao Định Kỳ -15%
+            <div class="pt-2">
+              <a href="contact.html#diem-ban" class="block w-full py-3 px-6 text-center bg-[#FF6F78] hover:bg-[#E65A63] text-white font-bold rounded-full transition text-xs sm:text-sm shadow-md">
+                Tìm điểm bán sản phẩm gần bạn
               </a>
+              <p class="text-[11px] text-stone-500 text-center mt-2">Website chỉ cung cấp thông tin tra cứu nhãn, không bán hàng trực tuyến.</p>
             </div>
+          </div>
+
+          <div class="p-3.5 bg-amber-50 rounded-xl border border-amber-200 text-xs text-stone-700 leading-relaxed">
+            <strong>Khuyến cáo:</strong> Sữa mẹ là thức ăn tốt nhất cho sức khoẻ và sự phát triển toàn diện của trẻ nhỏ. Sản phẩm dinh dưỡng công thức dùng bổ sung cho chế độ ăn của trẻ trên 1 tuổi.
           </div>
         </div>
       </div>
-      <div class="mt-10 rounded-2xl border border-amber-200 bg-amber-50 p-6 text-sm text-stone-800 space-y-2">
-        <h2 class="font-bold text-base">Pha sữa theo nhãn Stage 3</h2>
-        <p>Chỉ dùng cho trẻ từ 12 tháng tuổi. Dùng muỗng trong lon: 6 muỗng gạt ngang (6 g/muỗng) pha với 200 ml nước sạch; cho trẻ uống ngay sau khi pha, không bảo quản và bỏ phần còn thừa. Hướng dẫn trên nhãn: 1–2 cữ/ngày.</p>
-        <p>Thức uống này bổ sung cho chế độ ăn đa dạng, không dùng cho trẻ dưới 12 tháng. Hãy hỏi ý kiến chuyên gia y tế trước khi sử dụng.</p>
+
+      <!-- Tabs chi tiết Stage 3 -->
+      <div class="mt-14 pt-8 border-t border-stone-200">
+        <div class="flex flex-wrap gap-4 border-b border-stone-200 text-xs sm:text-sm font-bold mb-6" role="tablist">
+          <button type="button" onclick="switchTab('tabNutrition3', this)" class="tab-btn pb-3 border-b-2 border-[#FF6F78] text-[#FF6F78] transition">
+            1. Thành phần & bảng dinh dưỡng
+          </button>
+          <button type="button" onclick="switchTab('tabPreparation3', this)" class="tab-btn pb-3 border-b-2 border-transparent text-stone-500 hover:text-stone-800 transition">
+            2. Cách pha & định lượng
+          </button>
+          <button type="button" onclick="switchTab('tabStorage3', this)" class="tab-btn pb-3 border-b-2 border-transparent text-stone-500 hover:text-stone-800 transition">
+            3. Hướng dẫn bảo quản
+          </button>
+        </div>
+
+        <!-- Tab 1: Thành phần & Dinh dưỡng Stage 3 -->
+        <div id="tabNutrition3" class="tab-content space-y-6">
+          <div class="space-y-3">
+            <h4 class="font-bold text-stone-900 text-sm sm:text-base">Thành phần nguyên liệu (theo nhãn sản phẩm Stage 3):</h4>
+            <p class="text-xs text-stone-700 leading-relaxed bg-stone-50 p-4 rounded-2xl border border-stone-200">
+              Sữa tươi nguyên chất đạm A2 hữu cơ (Fresh Organic A2 Protein Milk), Đường lactose hữu cơ, Dầu thực vật hữu cơ (Dầu hạt cải, Dầu hướng dương, Dầu dừa), Đạm whey cô đặc hữu cơ (Organic Whey Protein Concentrate), Galacto-oligosaccharide hữu cơ (GOS), Fructo-oligosaccharide hữu cơ (FOS), Axit Arachidonic (ARA), Axit Docosahexaenoic (DHA từ dầu cá). <strong>Vitamin:</strong> Axit Ascorbic (Vitamin C), Niacinamide (Vitamin B3), Vitamin A axetat, Vitamin E axetat, Cholecalciferol (Vitamin D3), Thiamine hydrochloride (Vitamin B1), Pyridoxine hydrochloride (Vitamin B6), Riboflavin (Vitamin B2), Axit folic, Cyanocobalamin (Vitamin B12). <strong>Khoáng chất:</strong> Canxi photphat, Kali clorua, Natri citrat, Magie sulfat, Sắt sulfat, Kẽm sulfat.
+            </p>
+            <p class="text-xs text-rose-700 font-semibold">
+              Thông tin dị ứng: Sản phẩm có chứa sữa, đậu nành và dầu cá.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-stone-900 mb-2 text-sm sm:text-base">Bảng giá trị dinh dưỡng trung bình (theo nhãn Stage 3 và TCCS 03/2026):</h4>
+            <div class="overflow-x-auto rounded-2xl border border-stone-200">
+              <table class="nutrition-table text-xs w-full min-w-[540px]">
+                <thead>
+                  <tr>
+                    <th scope="col" class="p-3 bg-stone-100 text-stone-800 text-left font-bold">Chỉ số dinh dưỡng</th>
+                    <th scope="col" class="p-3 bg-stone-100 text-stone-800 text-left font-bold">Đơn vị</th>
+                    <th scope="col" class="p-3 bg-stone-100 text-stone-800 text-left font-bold">Trong 100 ml sữa đã pha</th>
+                    <th scope="col" class="p-3 bg-stone-100 text-stone-800 text-left font-bold">Trong 100 g bột sữa</th>
+                    <th scope="col" class="p-3 bg-stone-100 text-stone-800 text-left font-bold">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-stone-100">
+                  <tr class="bg-rose-50/40"><td class="p-2.5 font-bold text-stone-900" colspan="5">Thành phần hoạt tính sinh học tự nhiên</td></tr>
+                  <tr><td class="p-2.5 pl-4 font-semibold text-stone-800">Lactoferrin</td><td class="p-2.5">mg</td><td class="p-2.5 font-bold text-[#FF6F78]">1.6</td><td class="p-2.5">10</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                  <tr><td class="p-2.5 pl-4 font-semibold text-stone-800">Immunoglobulins (IgG)</td><td class="p-2.5">mg</td><td class="p-2.5 font-bold text-[#FF6F78]">31</td><td class="p-2.5">200</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+
+                  <tr class="bg-stone-50"><td class="p-2.5 font-bold text-stone-900" colspan="5">Năng lượng & Đạm</td></tr>
+                  <tr><td class="p-2.5 pl-4">Năng lượng (Energy)</td><td class="p-2.5">kJ / Cal</td><td class="p-2.5">302 / 72</td><td class="p-2.5">1933 / 462</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                  <tr><td class="p-2.5 pl-4">Chất đạm (Protein)</td><td class="p-2.5">g</td><td class="p-2.5">2.1</td><td class="p-2.5">14</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                  <tr><td class="p-2.5 pl-6 text-stone-600">- Đạm A2-β-Casein</td><td class="p-2.5">g</td><td class="p-2.5">0.5</td><td class="p-2.5">3.0</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+
+                  <tr class="bg-stone-50"><td class="p-2.5 font-bold text-stone-900" colspan="5">Chất béo & Axit béo</td></tr>
+                  <tr><td class="p-2.5 pl-4">Chất béo tổng số (Fat, total)</td><td class="p-2.5">g</td><td class="p-2.5">2.9</td><td class="p-2.5">19</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                  <tr><td class="p-2.5 pl-6 text-stone-600">- DHA</td><td class="p-2.5">mg</td><td class="p-2.5">14.4</td><td class="p-2.5">92</td><td class="p-2.5 text-stone-500">Từ dầu cá</td></tr>
+                  <tr><td class="p-2.5 pl-6 text-stone-600">- ARA</td><td class="p-2.5">mg</td><td class="p-2.5">14.4</td><td class="p-2.5">92</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+
+                  <tr class="bg-stone-50"><td class="p-2.5 font-bold text-stone-900" colspan="5">Carbohydrate & Prebiotics</td></tr>
+                  <tr><td class="p-2.5 pl-4">Carbohydrate</td><td class="p-2.5">g</td><td class="p-2.5">9.7</td><td class="p-2.5">62</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                  <tr><td class="p-2.5 pl-6 text-stone-600">- Đường tự nhiên (Sugars)</td><td class="p-2.5">g</td><td class="p-2.5">9.2</td><td class="p-2.5">59</td><td class="p-2.5 text-stone-500">Lactose tự nhiên</td></tr>
+                  <tr><td class="p-2.5 pl-4">Prebiotic GOS / FOS</td><td class="p-2.5">g</td><td class="p-2.5">0.15 / 0.15</td><td class="p-2.5">1.0 / 1.0</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+
+                  <tr class="bg-stone-50"><td class="p-2.5 font-bold text-stone-900" colspan="5">Khoáng chất tiêu biểu</td></tr>
+                  <tr><td class="p-2.5 pl-4">Canxi (Calcium)</td><td class="p-2.5">mg</td><td class="p-2.5">94</td><td class="p-2.5">600</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                  <tr><td class="p-2.5 pl-4">Sắt (Iron)</td><td class="p-2.5">mg</td><td class="p-2.5">1.3</td><td class="p-2.5">8.6</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                  <tr><td class="p-2.5 pl-4">Kẽm (Zinc)</td><td class="p-2.5">mg</td><td class="p-2.5">0.5</td><td class="p-2.5">2.9</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                  <tr><td class="p-2.5 pl-4">Vitamin D</td><td class="p-2.5">µg</td><td class="p-2.5">1.5</td><td class="p-2.5">9.7</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                  <tr><td class="p-2.5 pl-4">Vitamin C</td><td class="p-2.5">mg</td><td class="p-2.5">15.5</td><td class="p-2.5">99</td><td class="p-2.5 text-stone-500">Theo nhãn</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Hướng dẫn pha Stage 3 -->
+        <div id="tabPreparation3" class="tab-content space-y-6 hidden">
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-3 text-center">
+            <div class="p-4 bg-stone-50 rounded-2xl border border-stone-200">
+              <div class="w-7 h-7 rounded-full bg-[#FF6F78] text-white flex items-center justify-center font-bold mx-auto mb-2 text-xs">1</div>
+              <h5 class="font-bold text-xs text-stone-900 mb-1">Rửa tay sạch sẽ</h5>
+              <p class="text-[11px] text-stone-500">Rửa sạch tay và tiệt trùng cốc uống nước của bé.</p>
+            </div>
+            <div class="p-4 bg-stone-50 rounded-2xl border border-stone-200">
+              <div class="w-7 h-7 rounded-full bg-[#FF6F78] text-white flex items-center justify-center font-bold mx-auto mb-2 text-xs">2</div>
+              <h5 class="font-bold text-xs text-stone-900 mb-1">Chuẩn bị nước sạch</h5>
+              <p class="text-[11px] text-stone-500">Đun sôi nước uống và để nguội xuống nhiệt độ ấm thích hợp.</p>
+            </div>
+            <div class="p-4 bg-stone-50 rounded-2xl border border-stone-200">
+              <div class="w-7 h-7 rounded-full bg-[#FF6F78] text-white flex items-center justify-center font-bold mx-auto mb-2 text-xs">3</div>
+              <h5 class="font-bold text-xs text-stone-900 mb-1">Đo lượng nước</h5>
+              <p class="text-[11px] text-stone-500">Rót 200 ml nước ấm vào cốc uống.</p>
+            </div>
+            <div class="p-4 bg-stone-50 rounded-2xl border border-stone-200">
+              <div class="w-7 h-7 rounded-full bg-[#FF6F78] text-white flex items-center justify-center font-bold mx-auto mb-2 text-xs">4</div>
+              <h5 class="font-bold text-xs text-stone-900 mb-1">Đong bột gạt ngang</h5>
+              <p class="text-[11px] text-stone-500">Thêm 6 muỗng gạt ngang (khoảng 6g/muỗng) vào 200 ml nước.</p>
+            </div>
+            <div class="p-4 bg-stone-50 rounded-2xl border border-stone-200">
+              <div class="w-7 h-7 rounded-full bg-[#FF6F78] text-white flex items-center justify-center font-bold mx-auto mb-2 text-xs">5</div>
+              <h5 class="font-bold text-xs text-stone-900 mb-1">Khuấy đều cho tan</h5>
+              <p class="text-[11px] text-stone-500">Khuấy đều cho bột tan hoàn toàn và cho bé uống ngay.</p>
+            </div>
+          </div>
+
+          <h4 class="font-bold text-stone-900 pt-2 text-sm sm:text-base">Bảng khẩu phần khuyến nghị (Feeding Guide Stage 3):</h4>
+          <div class="overflow-x-auto rounded-2xl border border-stone-200">
+            <table class="nutrition-table text-xs w-full min-w-[540px]">
+              <thead>
+                <tr>
+                  <th scope="col" class="p-3 bg-stone-100 text-stone-800 text-left font-bold">Độ tuổi của trẻ</th>
+                  <th scope="col" class="p-3 bg-stone-100 text-stone-800 text-left font-bold">Lượng nước ấm (ml)</th>
+                  <th scope="col" class="p-3 bg-stone-100 text-stone-800 text-left font-bold">Số muỗng gạt (6g/muỗng)</th>
+                  <th scope="col" class="p-3 bg-stone-100 text-stone-800 text-left font-bold">Số cữ uống mỗi ngày</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-stone-100">
+                <tr><td class="p-2.5 font-medium">Từ 12 tháng tuổi trở lên</td><td class="p-2.5">200 ml</td><td class="p-2.5">6 muỗng</td><td class="p-2.5">1 - 2 lần</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-[11px] text-stone-500 italic">*Chỉ sử dụng muỗng lường kèm theo lon. Pha đúng tỷ lệ theo nhãn. Sản phẩm dinh dưỡng dùng kết hợp với bữa ăn hàng ngày của bé.</p>
+        </div>
+
+        <!-- Tab 3: Bảo quản Stage 3 -->
+        <div id="tabStorage3" class="tab-content space-y-4 hidden">
+          <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200 text-xs text-stone-700 space-y-3 leading-relaxed">
+            <h4 class="font-bold text-stone-900 text-sm">Hướng dẫn bảo quản lon và sữa đã pha:</h4>
+            <p>• <strong>Bảo quản lon sữa:</strong> Đậy kín nắp nhựa sau mỗi lần sử dụng. Bảo quản ở nơi khô ráo, thoáng mát dưới 25°C. Không để trong tủ lạnh.</p>
+            <p>• <strong>Thời hạn sử dụng sau mở nắp:</strong> Sử dụng hết trong vòng 4 tuần kể từ ngày mở nắp lon.</p>
+            <p>• <strong>Sữa sau khi pha:</strong> Cho bé uống ngay sau khi pha xong. Không bảo quản lại phần sữa bé uống dở.</p>
+          </div>
+        </div>
+
       </div>
+
     </div>
-  </section>
+  </main>
 
   <!-- Wave Divider Footer -->
   <div class="wave-divider -mb-1">
@@ -263,85 +407,67 @@
   <!-- Global Footer -->
   <footer class="bg-[#1C120D] text-stone-300 pt-16 pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         <!-- Brand Info -->
-        <div class="lg:col-span-2 space-y-4">
-          <img src="assets/images/nutura-logo-rev.svg" alt="Nutura Organic" class="h-10 w-auto">
-          <p class="text-sm text-stone-400 leading-relaxed max-w-sm">
-            Nutura Organic - Dòng sữa dinh dưỡng và sữa công thức hữu cơ cao cấp sản xuất 100% tại Úc. Được tạo nên bởi các chuyên gia dinh dưỡng và nông dân tận tâm nhằm đồng hành cùng ngôi làng nuôi con của bạn.
+        <div class="space-y-4">
+          <img src="assets/images/nutura-logo-rev.svg" alt="Nutura Organic" class="h-9 w-auto">
+          <p class="text-xs text-stone-400 leading-relaxed">
+            Nutura Organic - Sản phẩm dinh dưỡng công thức hữu cơ sản xuất 100% tại Victoria, Úc từ sữa tươi nguyên liệu farmgate. Nhãn sản phẩm thể hiện logo chứng nhận hữu cơ ACO.
           </p>
-          <div class="flex items-center gap-4 pt-2">
-            <img src="assets/images/aco-logo.png" alt="Australian Certified Organic" class="h-12 w-auto bg-white p-1 rounded-lg">
-            <img src="assets/images/icon-aus-made.png" alt="Australian Made and Owned" class="h-12 w-auto bg-white p-1 rounded-lg">
+          <div class="flex items-center gap-3 pt-1">
+            <img src="assets/images/aco-logo.png" alt="Australian Certified Organic" class="h-10 w-auto bg-white p-1 rounded-lg">
+            <img src="assets/images/icon-aus-made.png" alt="Australian Made and Owned" class="h-10 w-auto bg-white p-1 rounded-lg">
           </div>
-          <p class="text-xs text-stone-500 pt-1">
-            🌱 Xem thành phần, chứng nhận và hướng dẫn sử dụng trên nhãn từng sản phẩm.
-          </p>
         </div>
 
         <!-- Products Column -->
         <div>
-          <h4 class="text-white text-base font-bold mb-4 font-heading">Dòng Sữa Hữu Cơ</h4>
-          <ul class="space-y-2.5 text-sm">
+          <h4 class="text-white text-sm font-bold mb-4 font-heading">Thông tin sản phẩm</h4>
+          <ul class="space-y-2 text-xs text-stone-400">
             <li><a href="product-stage1.html" class="hover:text-[#FF6F78] transition">Stage 1 (0 - 6 tháng)</a></li>
             <li><a href="product-stage2.html" class="hover:text-[#FF6F78] transition">Stage 2 (6 - 12 tháng)</a></li>
             <li><a href="product-stage3.html" class="hover:text-[#FF6F78] transition">Stage 3 (12 - 36 tháng)</a></li>
-            <li><a href="subscriptions.html" class="text-rose-400 hover:text-white transition font-medium">Gói Giao Định Kỳ Milkman (-15%)</a></li>
+            <li><a href="contact.html#diem-ban" class="hover:text-[#FF6F78] transition font-semibold text-rose-300">Tìm điểm bán</a></li>
           </ul>
         </div>
 
-        <!-- Company & Science -->
+        <!-- Navigation Links -->
         <div>
-          <h4 class="text-white text-base font-bold mb-4 font-heading">Về Nutura</h4>
-          <ul class="space-y-2.5 text-sm">
-            <li><a href="fresh-milk-difference.html" class="hover:text-[#FF6F78] transition">Sự Khác Biệt Sữa Tươi</a></li>
-            <li><a href="certified-organic.html" class="hover:text-[#FF6F78] transition">Chứng Nhận Hữu Cơ</a></li>
-            <li><a href="about-us.html" class="hover:text-[#FF6F78] transition">Câu Chuyện & Lịch Sử</a></li>
-            <li><a href="about-us.html#team" class="hover:text-[#FF6F78] transition">Đội Ngũ Chuyên Gia</a></li>
-            <li><a href="village.html" class="hover:text-[#FF6F78] transition">Ngôi Làng Tri Thức (Blog)</a></li>
-            <li><a href="faqs.html" class="hover:text-[#FF6F78] transition">Câu Hỏi Thường Gặp</a></li>
-            <li><a href="contact.html" class="hover:text-[#FF6F78] transition">Liên Hệ Tư Vấn</a></li>
-            <li><a href="breast-is-best.html" class="hover:text-[#FF6F78] transition">Thông Tin Sữa Mẹ</a></li>
+          <h4 class="text-white text-sm font-bold mb-4 font-heading">Về Nutura</h4>
+          <ul class="space-y-2 text-xs text-stone-400">
+            <li><a href="about-us.html" class="hover:text-[#FF6F78] transition">Câu chuyện & nhà máy Victoria</a></li>
+            <li><a href="fresh-milk-difference.html" class="hover:text-[#FF6F78] transition">Sự khác biệt sữa tươi farmgate</a></li>
+            <li><a href="certified-organic.html" class="hover:text-[#FF6F78] transition">Chứng nhận hữu cơ ACO</a></li>
+            <li><a href="village.html" class="hover:text-[#FF6F78] transition">Góc cha mẹ (Cẩm nang nuôi con)</a></li>
+            <li><a href="faqs.html" class="hover:text-[#FF6F78] transition">Câu hỏi thường gặp</a></li>
+            <li><a href="breast-is-best.html" class="hover:text-[#FF6F78] transition">Thông tin sữa mẹ (WHO)</a></li>
           </ul>
         </div>
 
-        <!-- Newsletter & Contact -->
-        <div>
-          <h4 class="text-white text-base font-bold mb-4 font-heading">Nhận Bản Tin Ngôi Làng</h4>
-          <p class="text-xs text-stone-400 mb-3">
-            Đăng ký để nhận kiến thức dinh dưỡng từ chuyên gia và ưu đãi giảm 10% cho đơn hàng đầu tiên.
-          </p>
-          <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký nhận bản tin từ Nutura!');" class="space-y-2">
-            <input type="email" required placeholder="Nhập địa chỉ email của bạn..." class="w-full px-3.5 py-2.5 text-xs bg-stone-800 border border-stone-700 rounded-xl text-white placeholder-stone-500 focus:outline-none focus:border-[#FF6F78]">
-            <button type="submit" class="w-full py-2.5 px-4 bg-[#FF6F78] hover:bg-[#E65A63] text-white text-xs font-bold rounded-xl transition">
-              Đăng Ký Ngay
-            </button>
-          </form>
-          <div class="mt-5 pt-4 border-t border-stone-800 text-xs text-stone-400 space-y-1">
-            <p><strong>Hotline:</strong> 1800 827 957</p>
-            <p><strong>Email:</strong> info@nutura.com.au / cskh@nutura.vn</p>
+        <!-- Legal Entity & Contact -->
+        <div class="space-y-3 text-xs text-stone-400">
+          <h4 class="text-white text-sm font-bold mb-4 font-heading">Đơn vị chịu trách nhiệm</h4>
+          <p class="font-semibold text-stone-200">Công ty TNHH EVA Premium Mom and Baby</p>
+          <p>EVA Premium Mom and Baby Co., Ltd.</p>
+          <p>Địa chỉ: Tỉnh Lâm Đồng, Việt Nam</p>
+          <p>Mã số thuế: Đang cập nhật (chưa xác minh)</p>
+          <div class="pt-2 border-t border-stone-800 space-y-1">
+            <p><strong class="text-stone-300">Hotline:</strong> 1800 827 957</p>
+            <p><strong class="text-stone-300">Email:</strong> lienhe@nuturavietnam.vn</p>
+            <p><strong class="text-stone-300">Nhà sản xuất:</strong> Nutura Organic Ltd, Mulgrave VIC, Australia</p>
           </div>
         </div>
       </div>
 
-      <!-- Payment Icons & Copyright -->
-      <div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-        <div>
-          <p>© 2026 Nutura Organic. Phiên bản tiếng Việt độc quyền chính thức.</p>
-          <p class="mt-1">Sản xuất tại Victoria, Australia. Nhập khẩu và phân phối chính ngạch.</p>
-        </div>
-        <div class="flex items-center gap-3">
-          <img src="assets/images/logo-visa.svg" alt="Visa" class="h-6 w-auto opacity-75">
-          <img src="assets/images/logo-mastercard.svg" alt="Mastercard" class="h-6 w-auto opacity-75">
-          <img src="assets/images/logo-amex.svg" alt="Amex" class="h-6 w-auto opacity-75">
-          <span class="px-2 py-1 bg-stone-800 text-stone-300 rounded text-[10px] font-semibold">VietQR</span>
-          <span class="px-2 py-1 bg-stone-800 text-stone-300 rounded text-[10px] font-semibold">COD</span>
-        </div>
+      <!-- Copyright -->
+      <div class="border-t border-stone-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] text-stone-500">
+        <p>© 2026 Nutura Việt Nam. Trang thông tin thương hiệu & tra cứu thông tin theo nhãn sản phẩm.</p>
+        <p>Sản xuất tại Victoria, Australia. Nhập khẩu chính ngạch.</p>
       </div>
 
-      <!-- Medical Notice Footer -->
-      <div class="mt-8 p-4 bg-stone-900/60 rounded-xl text-[11px] text-stone-400 leading-relaxed text-center max-w-4xl mx-auto border border-stone-800">
-        <strong>Thông điệp y tế quan trọng:</strong> Sữa mẹ là thức ăn tốt nhất cho sự phát triển toàn diện của trẻ sơ sinh và trẻ nhỏ. Thông tin trên website mang tính chất giáo dục và giới thiệu khoa học dinh dưỡng.
+      <!-- Medical Notice Footer (NĐ100/2014/NĐ-CP) -->
+      <div class="mt-6 p-4 bg-stone-900/60 rounded-xl text-[11px] text-stone-400 leading-relaxed text-center max-w-4xl mx-auto border border-stone-800">
+        <strong>Thông điệp y tế:</strong> Sữa mẹ là thức ăn tốt nhất cho sức khoẻ và sự phát triển toàn diện của trẻ nhỏ. Thông tin trên website mang tính chất giáo dục và tra cứu theo nhãn sản phẩm, không thay thế cho lời khuyên của bác sĩ hay cán bộ y tế.
       </div>
     </div>
   </footer>
