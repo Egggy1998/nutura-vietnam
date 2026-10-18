@@ -10,6 +10,7 @@ import os
 OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def render_head(title, description, canonical_url="index.html"):
+    abs_url = f"https://nutura-vietnam.pages.dev/{canonical_url}" if canonical_url != "index.html" else "https://nutura-vietnam.pages.dev/"
     return f"""<!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -17,8 +18,60 @@ def render_head(title, description, canonical_url="index.html"):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | Nutura Organic Việt Nam</title>
   <meta name="description" content="{description}">
-  <link rel="canonical" href="{canonical_url}">
+  <link rel="canonical" href="{abs_url}">
   <link rel="shortcut icon" href="assets/images/nutura-logo-coral.svg">
+  
+  <!-- Open Graph & Social SEO -->
+  <meta property="og:site_name" content="Nutura Việt Nam">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{title} | Nutura Organic Việt Nam">
+  <meta property="og:description" content="{description}">
+  <meta property="og:url" content="{abs_url}">
+  <meta property="og:image" content="https://nutura-vietnam.pages.dev/assets/images/nutura-tin-lockups.png">
+  <meta property="og:locale" content="vi_VN">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title} | Nutura Organic Việt Nam">
+  <meta name="twitter:description" content="{description}">
+  <meta name="twitter:image" content="https://nutura-vietnam.pages.dev/assets/images/nutura-tin-lockups.png">
+
+  <!-- Schema.org JSON-LD (SEO & GEO Structured Data) -->
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@graph": [
+      {{
+        "@type": "Organization",
+        "@id": "https://nutura-vietnam.pages.dev/#organization",
+        "name": "Nutura Việt Nam",
+        "url": "https://nutura-vietnam.pages.dev/",
+        "logo": "https://nutura-vietnam.pages.dev/assets/images/nutura-logo-coral.svg",
+        "description": "Thương hiệu sản phẩm dinh dưỡng công thức hữu cơ nhập khẩu từ bang Victoria, Australia.",
+        "parentOrganization": {{
+          "@type": "Organization",
+          "name": "Công ty TNHH EVA Premium Mom and Baby",
+          "address": {{
+            "@type": "PostalAddress",
+            "addressRegion": "Lâm Đồng",
+            "addressCountry": "VN"
+          }}
+        }}
+      }},
+      {{
+        "@type": "WebSite",
+        "@id": "https://nutura-vietnam.pages.dev/#website",
+        "url": "https://nutura-vietnam.pages.dev/",
+        "name": "Nutura Việt Nam",
+        "description": "{description}",
+        "publisher": {{
+          "@id": "https://nutura-vietnam.pages.dev/#organization"
+        }},
+        "inLanguage": "vi"
+      }}
+    ]
+  }}
+  </script>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>

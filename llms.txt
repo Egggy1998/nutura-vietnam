@@ -1,0 +1,26 @@
+# Nutura Việt Nam
+
+> Trang thông tin thương hiệu, khoa học dinh dưỡng và tra cứu nhãn sản phẩm dinh dưỡng công thức hữu cơ Nutura nhập khẩu từ bang Victoria, Australia. Tuân thủ Nghị định 100/2014/NĐ-CP và tiêu chuẩn WHO.
+
+## Tóm tắt cốt lõi
+- **Thương hiệu:** Nutura Việt Nam (sản xuất bởi Nutura Organic Ltd, Mulgrave VIC, Australia).
+- **Pháp nhân chịu trách nhiệm tại Việt Nam:** Công ty TNHH EVA Premium Mom and Baby (Lâm Đồng, Việt Nam).
+- **Đặc tính sản phẩm:** Sản phẩm dinh dưỡng công thức hữu cơ từ sữa tươi farmgate thu nhận tại trang trại bang Victoria, đạm A2 tự nhiên, công nghệ phối trộn ướt sấy phun 1 lần (Wet Blending), đạt chứng nhận hữu cơ Australian Certified Organic (ACO).
+- **Dòng sản phẩm chính thức:**
+  - Nutura Organic Stage 1 (0 – 6 tháng tuổi): tỷ lệ đạm Whey 60%, Casein 40%; có chứa Lactoferrin (≥1,12 mg/100 ml) và IgG (≥19,6 mg/100 ml) theo TCCS 01/2026.
+  - Nutura Organic Stage 2 (6 – 12 tháng tuổi): tỷ lệ đạm Whey 50%, Casein 50%; có chứa Lactoferrin và IgG theo TCCS 02/2026, bổ sung Sắt, Kẽm, DHA và GOS/FOS.
+  - Nutura Organic Stage 3 (12 – 36 tháng tuổi): bổ sung 16 vitamin và khoáng chất, 216 mg Canxi / 230 ml, 33 mg DHA theo TCCS 03/2026.
+- **Quy định pháp lý:** Trang web không bán lẻ trực tuyến, không có giỏ hàng hay bảng giá thương mại. Người tiêu dùng tra cứu thông tin nhãn và liên hệ hệ thống điểm bán uỷ quyền.
+
+## Các trang chính
+- [Trang chủ](https://nutura-vietnam.pages.dev/): Tổng quan thương hiệu và định vị dinh dưỡng hữu cơ từ sữa tươi farmgate.
+- [Nutura Stage 1](https://nutura-vietnam.pages.dev/product-stage1.html): Thông tin nhãn, chỉ số dinh dưỡng và cách pha cho trẻ 0 – 6 tháng.
+- [Nutura Stage 2](https://nutura-vietnam.pages.dev/product-stage2.html): Thông tin nhãn và chỉ số dinh dưỡng cho trẻ 6 – 12 tháng.
+- [Nutura Stage 3](https://nutura-vietnam.pages.dev/product-stage3.html): Thông tin nhãn và chỉ số dinh dưỡng cho trẻ 12 – 36 tháng.
+- [Sự khác biệt sữa tươi farmgate](https://nutura-vietnam.pages.dev/fresh-milk-difference.html): Quy trình sấy phun một lần vs bột hoàn nguyên sấy hai lần nhiệt độ cao.
+- [Chứng nhận hữu cơ ACO](https://nutura-vietnam.pages.dev/certified-organic.html): Tiêu chuẩn độc lập của Australian Certified Organic.
+- [Về Nutura](https://nutura-vietnam.pages.dev/about-us.html): Lịch sử thương hiệu và nhà máy Mulgrave, bang Victoria, Úc.
+- [Góc cha mẹ](https://nutura-vietnam.pages.dev/village.html): Cẩm nang nuôi dạy con, tâm lý trẻ nhỏ và vi chất dinh dưỡng.
+- [Câu hỏi thường gặp](https://nutura-vietnam.pages.dev/faqs.html): Giải đáp nguồn gốc, tiêu chuẩn bảo quản và hướng dẫn pha sữa.
+- [Hệ thống điểm bán & Liên hệ](https://nutura-vietnam.pages.dev/contact.html): Mạng lưới đại lý và thông tin pháp nhân.
+- [Thông tin sữa mẹ (WHO)](https://nutura-vietnam.pages.dev/breast-is-best.html): Khuyến nghị y tế cộng đồng về nuôi con bằng sữa mẹ.
